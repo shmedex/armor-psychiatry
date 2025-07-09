@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anxiety Disorder - Armor Psychiatry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fs-2" href="index.html"
+                style="letter-spacing:1px; font-family:'Segoe UI', Arial, sans-serif;">
+                Armor <span style="color:#2C3D4D; font-weight:500;">Psychiatry</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3z"></path>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="about-us.html"
+                            id="aboutDropdown" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M10 16l-4-4h8z" />
+                            </svg>
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="services.html"
+                            id="servicesToggle" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 19h16v-14H4z"></path>
+                                <line x1="12" y1="17" x2="12" y2="10"></line>
+                                <line x1="8" y1="13" x2="16" y2="13"></line>
+                            </svg>
+                            <span class="ms-1">Services</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesToggle">
+                            <li><a class="dropdown-item" href="bipolar-disorder.html">Bipolar Disorder</a></li>
+                            <li><a class="dropdown-item" href="ADD-ADHD.html">ADD/ADHD</a></li>
+                            <li><a class="dropdown-item" href="anxiety-disorder.html">Anxiety Disorder</a></li>
+                            <li><a class="dropdown-item" href="depression.html">Depression</a></li>
+                            <li><a class="dropdown-item" href="ptsd.html">PTSD</a></li>
+                            <li><a class="dropdown-item" href="emotional-stress.html">Emotional Stress</a></li>
+                            <li><a class="dropdown-item" href="schizophrenia.html">Schizophrenia</a></li>
+                            <li><a class="dropdown-item" href="psychosis.html">Psychosis</a></li>
+                            <li><a class="dropdown-item" href="panic-disorder.html">Panic Disorder</a></li>
+                            <li><a class="dropdown-item" href="autism-spectrum.html">Autism Spectrum</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active d-flex align-items-center" href="insurances.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            Insurance
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link d-flex align-items-center" href="contact-us.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-3">
+                    <a class="btn btn-blue-icon" href="contact-us.html" role="button" aria-label="Book An Appointment">
+                        <span class="icon-container" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                            </svg>
+                        </span>
+                        Book An Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="service-hero-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="service-hero-text">
+                        <h1>Anxiety Disorder <span class="highlight-blue">Treatment</span></h1>
+                        <p class="lead">
+                            Armor Psychiatry offers comprehensive care for individuals struggling with anxiety
+                            disorders, including Generalized Anxiety Disorder (GAD), Panic Disorder, Social Anxiety
+                            Disorder, and more. Our team of specialists is dedicated to providing personalized treatment
+                            plans that may include therapy, medication management, and lifestyle modifications.
+                        </p>
+                        <div class="breadcrumb">
+                            <a href="../index.html">Home</a> >
+                            <a href="../services.html">Services</a> >
+                            <span>Anxiety Disorder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <h2 class="mb-4">Get Help for <span class="text-primary">Anxiety Disorder</span></h2>
+                        <p class="lead">
+                            If you or a loved one is struggling with anxiety, our compassionate team is here to help. We
+                            provide evidence-based treatments tailored to your unique needs, whether through therapy,
+                            medication, or a combination of both.
+                        </p>
+                        <p>
+                            Contact us today to schedule a consultation and take the first step towards managing your
+                            anxiety disorder effectively.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="me-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Call Us Today</h5>
+                                <p class="mb-0 text-primary fw-bold">(555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="me-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email Us</h5>
+                                <p class="mb-0 text-primary fw-bold">adhd@armorpsychiatry.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-form bg-white p-4 p-lg-5 rounded shadow-sm">
+                        <h3 class="mb-4">Schedule a Consultation</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">How can we help?</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="consent" required>
+                                        <label class="form-check-label small" for="consent">
+                                            I consent to Armor Psychiatry contacting me about my inquiry
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="./img/anxiety-disorder1.jpg" alt="Anxiety Disorder" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <h2 class="section-title mb-4">Understanding <span class="text-primary">Anxiety Disorder</span>
+                        </h2>
+                        <p>
+                            Anxiety disorders are the most common mental health conditions, affecting millions of people
+                            worldwide. They can manifest in various forms, including Generalized Anxiety Disorder (GAD),
+                            Panic Disorder, Social Anxiety Disorder, and more. Symptoms may include excessive worry,
+                            restlessness, fatigue, difficulty concentrating, and physical symptoms like increased heart
+                            rate or sweating.
+                        </p>
+                        <p>
+                            At Armor Psychiatry, we understand the profound impact anxiety can have on daily life. Our
+                            team of specialists is dedicated to providing comprehensive care that addresses both the
+                            psychological and physiological aspects of anxiety disorders.
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="2.8" data-suffix="%">0%</h3>
+                                    <p class="mb-0">of U.S. adults</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="83" data-suffix="%">0%</h3>
+                                    <p class="mb-0">Severe cases</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="25" data-suffix="">0</h3>
+                                    <p class="mb-0">Average age onset</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="60" data-suffix="%">0%</h3>
+                                    <p class="mb-0">With family history</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Recognizing <span class="text-primary">Anxiety Disorder</span></h2>
+                    <p class="lead">Common symptoms and signs of anxiety disorders</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="symptom-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h4>Inattention Symptoms</h4>
+                        <ul class="symptom-list">
+                            <li>Difficulty sustaining attention in tasks or play activities</li>
+                            <li>Frequent careless mistakes in schoolwork or other activities</li>
+                            <li>Difficulty organizing tasks and activities</li>
+                            <li>Avoids or dislikes tasks requiring sustained mental effort</li>
+                            <li>Often loses things necessary for tasks and activities</li>
+                            <li>Easily distracted by extraneous stimuli</li>
+                            <li>Forgetful in daily activities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="symptom-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-bolt text-white"></i>
+                        </div>
+                        <h4>Hyperactivity-Impulsivity Symptoms</h4>
+                        <ul class="symptom-list">
+                            <li>Fidgets with hands or feet or squirms in seat</li>
+                            <li>Leaves seat in situations where remaining seated is expected</li>
+                            <li>Runs about or climbs excessively in inappropriate situations</li>
+                            <li>Difficulty playing or engaging in activities quietly</li>
+                            <li>Talks excessively</li>
+                            <li>Blurts out answers before questions have been completed</li>
+                            <li>Interrupts or intrudes on others' conversations or games</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Our Anxiety Disorder Treatment <span class="text-primary">Approach</span>
+                    </h2>
+                    <p class="lead">Comprehensive, personalized care for Anxiety Disorder management across all ages</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Treatment 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="treatment-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-pills text-white"></i>
+                        </div>
+                        <h4>Medication Management</h4>
+                        <p>Personalized medication plans to help manage anxiety symptoms effectively, including both
+                            stimulant and non-stimulant options.</p>
+                        <ul class="treatment-features">
+                            <li>Stimulant medications (e.g., amphetamines, methylphenidate)</li>
+                            <li>Non-stimulant medications (e.g., atomoxetine, guanfacine)</li>
+                            <li>Regular monitoring and adjustments</li>
+                            <li>Collaboration with primary care providers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Treatment 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="treatment-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-comments text-white"></i>
+                        </div>
+                        <h4>Behavioral Therapy</h4>
+                        <p>Evidence-based therapies to help individuals develop coping strategies, improve focus, and
+                            manage anxiety symptoms.</p>
+                        <ul class="treatment-features">
+                            <li>Cognitive Behavioral Therapy (CBT)</li>
+                            <li>Mindfulness and relaxation techniques</li>
+                            <li>Parent training and support</li>
+                            <li>Group therapy options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Treatment 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="treatment-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-tools text-white"></i>
+                        </div>
+                        <h4>Executive Function Coaching</h4>
+                        <p>Specialized coaching to help individuals with ADHD develop essential life skills, including
+                            time management, organization, and academic strategies.</p>
+                        <ul class="treatment-features">
+                            <li>Individualized coaching sessions</li>
+                            <li>Goal setting and progress tracking</li>
+                            <li>Support for academic and workplace challenges</li>
+                            <li>Parental involvement and training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Specialists Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Anxiety Disorder <span class="text-primary">Specialists</span></h2>
+                <p class="lead">Our team has extensive experience in anxiety disorder treatment across all age groups
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Specialist 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/adhd-specialist-1.jpg" alt="Dr. Sarah Williamson" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">Dr. Sarah Williamson</h4>
+                            <p class="text-primary mb-3">Child Psychiatrist</p>
+                            <p class="small">15+ years specializing in pediatric ADHD and learning disorders.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialist 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/adhd-specialist-2.jpg" alt="Dr. Michael Chen" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">Dr. Michael Chen</h4>
+                            <p class="text-primary mb-3">Adult ADHD Specialist</p>
+                            <p class="small">Expert in adult ADHD diagnosis and workplace accommodations.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialist 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/adhd-therapist-1.jpg" alt="Emily Rodriguez" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">Emily Rodriguez</h4>
+                            <p class="text-primary mb-3">ADHD Coach</p>
+                            <p class="small">Specializes in executive function training and organizational skills.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialist 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/adhd-np-1.jpg" alt="David Johnson" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">David Johnson</h4>
+                            <p class="text-primary mb-3">Psychiatric Nurse Practitioner</p>
+                            <p class="small">Focuses on medication management for adolescents and adults.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="our-team.html" class="btn btn-blue-icon">
+                    Meet the Full Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">ADHD <span class="text-primary">FAQs</span></h2>
+                    <p class="lead">Common questions about ADHD diagnosis and treatment</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="adhdFaqAccordion">
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true"
+                                    aria-controls="faqCollapseOne">
+                                    What's the difference between ADD and ADHD?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="faqHeadingOne" data-bs-parent="#adhdFaqAccordion">
+                                <div class="accordion-body" style="color: #333";>
+                                    ADD (Attention Deficit Disorder) is an older term that was used to describe what is
+                                    now called ADHD, Predominantly Inattentive Presentation. ADHD is the current
+                                    diagnostic term that includes three presentations: Predominantly Inattentive,
+                                    Predominantly Hyperactive-Impulsive, and Combined. All are considered subtypes of
+                                    ADHD under current diagnostic criteria.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false"
+                                    aria-controls="faqCollapseTwo">
+                                    Can adults be diagnosed with ADHD?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                                data-bs-parent="#adhdFaqAccordion">
+                                <div class="accordion-body" style="color: #333";>
+                                    Absolutely. While ADHD is often identified in childhood, many adults are diagnosed
+                                    later in life. Symptoms may present differently in adults, often as difficulties
+                                    with time management, organization, maintaining focus at work, or regulating
+                                    emotions. Adult ADHD is a valid diagnosis and can be effectively treated.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false"
+                                    aria-controls="faqCollapseThree">
+                                    Are medications always necessary for ADHD?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingThree" data-bs-parent="#adhdFaqAccordion">
+                                <div class="accordion-body" style="color: #333";>
+                                    Medication is often very effective for ADHD but isn't always necessary. The decision
+                                    depends on symptom severity, impairment level, and personal preference. Many people
+                                    benefit from a combination of medication and behavioral strategies. For mild cases
+                                    or certain individuals, behavioral interventions alone may be sufficient. We work
+                                    with each patient to develop the most appropriate treatment plan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingFour">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false"
+                                    aria-controls="faqCollapseFour">
+                                    How is ADHD diagnosed?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFour" data-bs-parent="#adhdFaqAccordion">
+                                <div class="accordion-body" style="color: #333";>
+                                    ADHD diagnosis involves a comprehensive evaluation including clinical interviews,
+                                    symptom checklists, often input from family members or teachers (for children), and
+                                    sometimes psychological testing. We rule out other possible causes for symptoms and
+                                    assess whether diagnostic criteria are met. There's no single test for ADHD -
+                                    diagnosis is based on a pattern of symptoms that have been present since childhood
+                                    and cause impairment in multiple areas of life.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingFive">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false"
+                                    aria-controls="faqCollapseFive">
+                                    What non-medication strategies help with ADHD?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFive" data-bs-parent="#adhdFaqAccordion">
+                                <div class="accordion-body" style="color: #333";>
+                                    Many behavioral strategies can help manage ADHD symptoms: establishing routines,
+                                    using planners/organizational tools, breaking tasks into smaller steps, minimizing
+                                    distractions, regular exercise, adequate sleep, mindfulness practices, and
+                                    cognitive-behavioral therapy. Environmental modifications at school or work (like
+                                    extended time for tasks) can also be beneficial. We help patients develop a
+                                    personalized toolkit of strategies.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="cta-card p-5 rounded-4 shadow-sm border-0" style="background-color: #f7fbff;">
+                        <h2 class="mb-4">Struggling with focus or organization?</h2>
+                        <p class="lead mb-4">Our ADHD specialists can help you develop strategies for success at any
+                            age.</p>
+                        <div class="d-inline-flex gap-3">
+                            <button class="btn btn-blue-icon" type="button">
+                                <span class="icon-container" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                                    </svg>
+                                </span>
+                                Book An Appointment
+                            </button>
+
+                            <button class="btn btn-outline-blue" type="button">
+                                <span class="icon-container" style="background: transparent; border-radius: 0.25rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white"
+                                        viewBox="0 0 24 24">
+                                        <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zm-11 0h7v7H3v-7z" />
+                                    </svg>
+                                </span>
+                                All Services
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer-section text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <img src="./img/Armor-Psychiatry-Logo-01-01.png" alt="Armor Psychiatry Logo">
+                        <br>
+                        <p class="mb-3">Providing compassionate, expert mental health care to help you live your best
+                            life.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h5 class="mb-4 fw-semibold">Contact Info</h5>
+                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:info@armorpsychiatry.com">info@armorpsychiatry.com</a></p>
+                        <p><strong>Address:</strong> 123 Wellness Blvd, Suite 200, Mental Health City, ST 12345</p>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-social" aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="about-us.html" class="footer-link">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+                        <li class="mb-2"><a href="contact-us.html" class="footer-link">Contact</a></li>
+                        <li class="mb-2"><a href="insurances.html" class="footer-link">Insurance</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="bipolar-disorder.html" class="footer-link">Bipolar Disorder</a></li>
+                        <li class="mb-2"><a href="ADD-ADHD.html" class="footer-link">ADD/ADHD</a></li>
+                        <li class="mb-2"><a href="anxiety-disorder.html" class="footer-link">Anxiety Disorder</a></li>
+                        <li class="mb-2"><a href="depression.html" class="footer-link">Depression</a></li>
+                        <li class="mb-2"><a href="ptsd.html" class="footer-link">PTSD</a></li>
+                        <li class="mb-2"><a href="emotional-stress.html" class="footer-link">Emotional Stress</a></li>
+                        <li class="mb-2"><a href="schizophrenia.html" class="footer-link">Schizophrenia</a></li>
+                        <li class="mb-2"><a href="psychosis.html" class="footer-link">Psychosis</a></li>
+                        <li class="mb-2"><a href="panic-disorder.html" class="footer-link">Panic Disorder</a></li>
+                        <li class="mb-2"><a href="austim-spectrum.html" class="footer-link">Austim Spectrum</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for mental health tips and updates.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control footer-input" placeholder="Your Email"
+                                aria-label="Your Email">
+                            <button class="btn btn-light footer-subscribe-btn" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="small text-white-50 mb-0">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-white-50 opacity-25">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">© 2023 Armor Psychiatry. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+                        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom js-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

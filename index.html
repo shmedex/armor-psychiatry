@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Armor Psychiatric </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fs-2" href="index.html"
+        style="letter-spacing:1px; font-family:'Segoe UI', Arial, sans-serif;">
+        Armor <span style="color:#3cada6; font-weight:500;">Psychiatry</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3z"></path>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="about-us.html" id="aboutDropdown"
+              role="button" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="14" height="14" fill="none"
+                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M10 16l-4-4h8z" />
+              </svg>
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="services.html" id="servicesToggle"
+              role="button" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="white"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M4 19h16v-14H4z"></path>
+                <line x1="12" y1="17" x2="12" y2="10"></line>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+              </svg>
+              <span class="ms-1">Services</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesToggle">
+              <li><a class="dropdown-item" href="bipolar-disorder.html">Bipolar Disorder</a></li>
+              <li><a class="dropdown-item" href="ADD-ADHD.html">ADD/ADHD</a></li>
+              <li><a class="dropdown-item" href="anxiety-disorder.html">Anxiety Disorder</a></li>
+              <li><a class="dropdown-item" href="depression.html">Depression</a></li>
+              <li><a class="dropdown-item" href="ptsd.html">PTSD</a></li>
+              <li><a class="dropdown-item" href="emotional-stress.html">Emotional Stress</a></li>
+              <li><a class="dropdown-item" href="schizophrenia.html">Schizophrenia</a></li>
+              <li><a class="dropdown-item" href="psychosis.html">Psychosis</a></li>
+              <li><a class="dropdown-item" href="panic-disorder.html">Panic Disorder</a></li>
+              <li><a class="dropdown-item" href="autism-spectrum.html">Autism Spectrum</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link active d-flex align-items-center" href="insurances.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              Insurance
+            </a>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link d-flex align-items-center" href="contact-us.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex ms-lg-3">
+          <a class="btn btn-blue-icon" href="contact-us.html" role="button" aria-label="Book An Appointment">
+            <span class="icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+              </svg>
+            </span>
+            Book An Appointment
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center position-relative">
+    <div class="hero-text mx-auto">
+      <br>
+      <br>
+      <h1>
+        Creating happy life<br />
+        With <span class="highlight-blue">Expert Care</span>
+      </h1>
+      <p>
+        At Armor Psychiatry, we are dedicated to providing personalized mental health care.
+      </p>
+      <div class="d-inline-flex gap-3">
+        <a class="btn btn-blue-icon" href="#about" role="button" aria-label="Get Started">
+          <span class="icon-container" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+            </svg>
+          </span>
+          Get Started
+        </a>
+
+        <a class="btn btn-outline-blue" href="#services" role="button" aria-label="Our Services">
+          <span class="icon-container" style=" background: transparent; border-radius: 0.25rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 24 24">
+              <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zm-11 0h7v7H3v-7z" />
+            </svg>
+          </span>
+          Our Services
+        </a>
+      </div>
+    </div>
+
+    <!-- Cards and doctor image container -->
+    <div class="cards-container">
+      <div class="card-custom">
+        <div class="card-icon-container" role="button" tabindex="0" aria-label="Go to Book Appointment">
+          <a href="contact-us.html" aria-label="Book Appointment">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M10 17l5-5-5-5" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="card-title text-decoration-none text-dark">Book Appointment</div>
+        <div class="card-subtitle text-decoration-none">Ready for a Healthier life?</div>
+      </div>
+
+      <div class="doctor-image-container" aria-hidden="true">
+        <img src="./img/doctor-2.png"
+          alt="Portrait of a friendly smiling female doctor or dentist wearing a white coat, looking confidently ahead with arms crossed" />
+      </div>
+
+      <div class="card-custom">
+        <div class="card-icon-container" role="button" tabindex="0" aria-label="Go to Patient Comfort">
+          <a href="services.html" aria-label="Patient Comfort">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M10 17l5-5-5-5" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="card-title">Patient Comfort</div>
+        <div class="card-subtitle">Comrehensive Services</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="position-relative">
+            <img src="./img/home-about.jpg" alt="About Us" class="img-fluid rounded shadow">
+            <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded shadow-sm m-3">
+              <h5 class="mb-0 text-primary">25+ Years Experience</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ps-lg-5">
+            <h2 class="section-title mb-4">About <span class="text-primary">Armor Psychiatry</span></h2>
+            <p class="lead">We provide the highest quality mental health care with compassion and expertise.</p>
+            <p>Our team of board-certified psychiatrists and mental health professionals are dedicated to helping you
+              achieve optimal mental wellness through personalized treatment plans.</p>
+
+            <div class="row mt-4">
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-1">Expert Team</h5>
+                    <p class="mb-0">Highly qualified professionals</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-1">Personalized Care</h5>
+                    <p class="mb-0">Tailored treatment plans</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-1">Modern Facility</h5>
+                    <p class="mb-0">State-of-the-art equipment</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-1">Compassionate</h5>
+                    <p class="mb-0">Patient-centered approach</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-blue-icon mt-3" type="button">
+              Learn More About Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Companies Section -->
+  <section class="companies-section py-5 bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title" style="color: var(--primary-color);">We accept <span
+              class="text-primary">Insurance</span></h2>
+          <p class="section-subtitle" style="color: var(--primary-color);">99% of patients have successfully
+            booked with these insurances</p>
+        </div>
+      </div>
+
+      <div class="scrolling-banner-container">
+        <div class="scrolling-banner">
+          <!-- First set of logos -->
+          <div class="company-logo">
+            <img src="./img/beacon-health.png" alt="Beacon Health" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/cigna.png" alt="Cigna" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/emblem.png" alt="Emblem" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/magellan.png" alt="Magellan" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/medicaid.jfif" alt="Medicaid" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/optum.png" alt="Optum" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/UMR.jfif" alt="UMR" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/tricare.jfif" alt="Tricare" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/unitedhealth.png" alt="United Health" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/molina.png" alt="Molina" class="img-fluid">
+          </div>
+
+          <!-- Duplicate set for seamless looping -->
+          <div class="company-logo">
+            <img src="./img/beacon-health.png" alt="Beacon Health" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/cigna.png" alt="Cigna" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/emblem.png" alt="Emblem" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/magellan.png" alt="Magellan" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/medicaid.jfif" alt="Medicaid" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/optum.png" alt="Optum" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/UMR.jfif" alt="UMR" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/tricare.jfif" alt="Tricare" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/unitedhealth.png" alt="United Health" class="img-fluid">
+          </div>
+          <div class="company-logo">
+            <img src="./img/molina.png" alt="Molina" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5" style="background-color: #2C3D4D;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title"> <span class="text-primary"> Our Services</span></h2>
+        <p class="lead" style="color: #3cada6;">Comprehensive mental health services tailored to your needs</p>
+        <div class="mx-auto mt-3" style="width:60px; height:4px; background: #2C3D4D; border-radius:2px;"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow-sm">
+            <div class="service-image"><img src="./img/bipolar-diorder2.jpeg" alt="Bipolar Disorder"
+                class="img-fluid w-100" />
+              <div class="service-overlay"></div>
+              <h3 class="service-title">Biploar Disorder</h3>
+            </div>
+            <div class="service-content">
+              <div class="icon-box mb-4">
+                <i class="fas fa-brain text-white"></i>
+              </div>
+              <p>Comprehensive assessment to understand your mental health needs and create a personalized treatment
+                plan.</p>
+              <a href="bipolar-disorder.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow-sm">
+            <div class="service-image"><img src="./img/add-adhd-1.webp" alt="ADD/ADHD" class="img-fluid w-100" />
+              <div class="service-overlay"></div>
+              <h3 class="service-title">ADD/ADHD</h3>
+            </div>
+            <div class="service-content">
+              <div class="icon-box mb-4">
+                <i class="fas fa-comments text-white"></i>
+              </div>
+              <p>Evidence-based talk therapy to help you manage emotions, behaviors, and thought patterns.</p>
+              <a href="add-adhd.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow-sm">
+            <div class="service-image"><img src="./img/anxiety-disorder1.jpg" alt="Anxiety Disorder"
+                class="img-fluid w-100" />
+              <div class="service-overlay"></div>
+              <h3 class="service-title">Anxiety Disorder</h3>
+            </div>
+            <div class="service-content">
+              <div class="icon-box mb-4">
+                <i class="fas fa-pills text-white"></i>
+              </div>
+              <p>Careful monitoring and adjustment of psychiatric medications for optimal results.</p>
+              <a href="anxiety-disorder.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a class="btn btn-blue-icon" href="services.html" role="button">
+            View All Services
+          </a>
+        </div>
+      </div>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <div class="position-relative">
+            <img src="./img/why-choose-us.jpg" alt="Why Choose Us" class="img-fluid rounded shadow">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="pe-lg-5">
+            <h2 class="section-title mb-4">Why <span class="text-primary">Choose Us</span></h2>
+            <p class="lead">We are committed to providing exceptional mental health care with a personal touch.</p>
+            <div class="accordion mt-4" id="whyChooseUsAccordion">
+              <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button bg-white rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Experienced Professionals
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#whyChooseUsAccordion">
+                  <div class="accordion-body" style="color: #333;">
+                    Our team consists of board-certified psychiatrists and licensed mental health professionals with
+                    extensive experience in treating a wide range of conditions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Personalized Treatment Plans
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#whyChooseUsAccordion">
+                  <div class="accordion-body" style="color: #333;">
+                    We understand that every individual is unique. That's why we create customized treatment plans
+                    tailored to your specific needs and goals.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 rounded shadow-sm">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Compassionate Care
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#whyChooseUsAccordion">
+                  <div class="accordion-body" style="color: #333;">
+                    We provide a safe, non-judgmental environment where you can feel comfortable discussing your
+                    concerns and working toward healing.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Patient <span class="text-primary">Testimonials</span></h2>
+        <p class="lead">Hear what our patients have to say about their experiences</p>
+        <div class="mx-auto mt-3" style="width:60px; height:4px; background: #2C3D4D; border-radius:2px;"></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card testimonial-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex mb-3">
+                <div class="me-3">
+                  <img src="https://via.placeholder.com/60" alt="Patient" class="rounded-circle" width="60" height="60">
+                </div>
+                <div>
+                  <h5 class="mb-1">Sarah Johnson</h5>
+                  <div class="text-warning mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0" style="color: #333;">"The care I received at Armor Psychiatry changed my life. The staff
+                was compassionate and
+                professional, and my treatment plan was tailored exactly to my needs."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card testimonial-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex mb-3">
+                <div class="me-3">
+                  <img src="https://via.placeholder.com/60" alt="Patient" class="rounded-circle" width="60" height="60">
+                </div>
+                <div>
+                  <h5 class="mb-1">Michael Chen</h5>
+                  <div class="text-warning mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">"After struggling with anxiety for years, I finally found relief through the comprehensive
+                treatment approach at Armor Psychiatry. Highly recommend their services."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card testimonial-card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex mb-3">
+                <div class="me-3">
+                  <img src="https://via.placeholder.com/60" alt="Patient" class="rounded-circle" width="60" height="60">
+                </div>
+                <div>
+                  <h5 class="mb-1">Emily Rodriguez</h5>
+                  <div class="text-warning mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-0">"The family therapy sessions helped us communicate better and resolve long-standing
+                conflicts. We're grateful for the support and guidance we received."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Frequently Asked <span class="text-primary">Questions</span></h2>
+        <p class="lead">Find answers to common questions about our services</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingOne">
+                <button class="accordion-button bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                  What conditions do you treat?
+                </button>
+              </h3>
+              <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body" style="color: #333;">
+                  We treat a wide range of mental health conditions including depression, anxiety disorders, bipolar
+                  disorder, ADHD, PTSD, OCD, and other mood and behavioral disorders.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingTwo">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                  How do I schedule an appointment?
+                </button>
+              </h3>
+              <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                data-bs-parent="#faqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  You can schedule an appointment by calling our office during business hours or using the online
+                  booking system on our website. New patient appointments typically require a brief phone screening
+                  first.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingThree">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                  Do you accept insurance?
+                </button>
+              </h3>
+              <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+                data-bs-parent="#faqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  We accept most major insurance plans. Please contact our office to verify your specific coverage. We
+                  also offer self-pay options and can provide documentation for out-of-network reimbursement.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingFour">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                  What can I expect at my first appointment?
+                </button>
+              </h3>
+              <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+                data-bs-parent="#faqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  Your first appointment will be a comprehensive evaluation where we'll discuss your concerns, medical
+                  history, and treatment goals. This helps us develop a personalized treatment plan tailored to your
+                  needs.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingFive">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                  How long does treatment typically last?
+                </button>
+              </h3>
+              <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
+                data-bs-parent="#faqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  Treatment duration varies depending on individual needs. Some patients benefit from short-term therapy
+                  (a few months), while others may require longer-term care. We regularly evaluate progress and adjust
+                  treatment as needed.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title mb-4">Contact <span class="text-primary">Us</span></h2>
+          <p class="lead mb-4">We're here to help. Reach out with any questions or to schedule an appointment.</p>
+
+          <div class="mb-4">
+            <div class="d-flex mb-3">
+              <div class="me-3 text-primary">
+                <i class="fas fa-map-marker-alt fa-lg"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Location</h5>
+                <p class="mb-0">123 Wellness Way, Suite 200<br>Anytown, ST 12345</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="me-3 text-primary">
+                <i class="fas fa-phone-alt fa-lg"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Phone</h5>
+                <p class="mb-0">(555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="me-3 text-primary">
+                <i class="fas fa-envelope fa-lg"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Email</h5>
+                <p class="mb-0">info@armorpsychiatry.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h5 class="mb-3">Office Hours</h5>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between py-2 border-bottom">
+                <span>Monday - Friday</span>
+                <span>8:00 AM - 5:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between py-2 border-bottom">
+                <span>Saturday</span>
+                <span>9:00 AM - 1:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between py-2">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h4 class="mb-4">Send Us a Message</h4>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name *</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone *</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Your Phone" required>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Service *</label>
+                  <select class="form-select" id="subject" required>
+                    <option value="" selected disabled>Select a Service</option>
+                    <option value="bipolar-disorder">Bipolar Disorder</option>
+                    <option value="add-adhd">ADD/ADHD</option>
+                    <option value="anxiety-disorder">Anxiety Disorder</option>
+                    <option value="depression">Depression</option>
+                    <option value="ptsd">PTSD</option>
+                    <option value="emotional-stress">Emotional Stress</option>
+                    <option value="schizophrenia">Schizophrenia</option>
+                    <option value="psychosis">Psychosis</option>
+                    <option value="panic-disorder">Panic Disorder</option>
+                    <option value="autism-spectrum">Autism Spectrum</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-blue-icon w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="mb-4">
+            <img src="./img/Armor-Psychiatry-Logo-01-01.png" alt="Armor Psychiatry Logo">
+            <br>
+            <p class="mb-3">Providing compassionate, expert mental health care to help you live your best life.</p>
+          </div>
+
+          <div class="contact-info">
+            <h5 class="mb-4 fw-semibold">Contact Info</h5>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@armorpsychiatry.com">info@armorpsychiatry.com</a></p>
+            <p><strong>Address:</strong> 123 Wellness Blvd, Suite 200, Mental Health City, ST 12345</p>
+          </div>
+          <br>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Facebook">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="Twitter">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="Instagram">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4">
+          <h5 class="mb-4 fw-semibold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+            <li class="mb-2"><a href="about-us.html" class="footer-link">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+            <li class="mb-2"><a href="contact-us.html" class="footer-link">Contact</a></li>
+            <li class="mb-2"><a href="insurances.html" class="footer-link">Insurance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4 fw-semibold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="bipolar-disorder.html" class="footer-link">Bipolar Disorder</a></li>
+            <li class="mb-2"><a href="ADD-ADHD.html" class="footer-link">ADD/ADHD</a></li>
+            <li class="mb-2"><a href="anxiety-disorder.html" class="footer-link">Anxiety Disorder</a></li>
+            <li class="mb-2"><a href="depression.html" class="footer-link">Depression</a></li>
+            <li class="mb-2"><a href="ptsd.html" class="footer-link">PTSD</a></li>
+            <li class="mb-2"><a href="emotional-stress.html" class="footer-link">Emotional Stress</a></li>
+            <li class="mb-2"><a href="schizophrenia.html" class="footer-link">Schizophrenia</a></li>
+            <li class="mb-2"><a href="psychosis.html" class="footer-link">Psychosis</a></li>
+            <li class="mb-2"><a href="panic-disorder.html" class="footer-link">Panic Disorder</a></li>
+            <li class="mb-2"><a href="austim-spectrum.html" class="footer-link">Austim Spectrum</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4 fw-semibold">Newsletter</h5>
+          <p class="text-white-50 mb-3">Subscribe to our newsletter for mental health tips and updates.</p>
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control footer-input" placeholder="Your Email" aria-label="Your Email">
+              <button class="btn btn-light footer-subscribe-btn" type="button">Subscribe</button>
+            </div>
+          </form>
+          <p class="small text-white-50 mb-0">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+      </div>
+
+      <hr class="my-4 bg-white-50 opacity-25">
+
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-0 text-white-50">© 2023 Armor Psychiatry. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="small mb-0">
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- custom JS -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

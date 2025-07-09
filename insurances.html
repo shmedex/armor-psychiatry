@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Insurance We Accept | Armor Psychiatry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        /* Additional custom styles */
+        .section-border {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+
+        .insurance-letter {
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2C3D4D;
+            display: inline-block;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .search-container input {
+            padding-left: 40px;
+            border-radius: 50px;
+            border: 1px solid #ced4da;
+        }
+
+        .search-container i {
+            position: absolute;
+            left: 15px;
+            top: 12px;
+            color: #2C3D4D;
+        }
+
+        .alphabet-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 30px;
+        }
+
+        .alphabet-nav a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+            color: #495057;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .alphabet-nav a:hover,
+        .alphabet-nav a.active {
+            background-color: #2C3D4D;
+            color: white;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fs-2" href="index.html"
+                style="letter-spacing:1px; font-family:'Segoe UI', Arial, sans-serif;">
+                Armor <span style="color:#2C3D4D; font-weight:500;">Psychiatry</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3z"></path>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="about-us.html"
+                            id="aboutDropdown" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M10 16l-4-4h8z" />
+                            </svg>
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="services.html"
+                            id="servicesToggle" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 19h16v-14H4z"></path>
+                                <line x1="12" y1="17" x2="12" y2="10"></line>
+                                <line x1="8" y1="13" x2="16" y2="13"></line>
+                            </svg>
+                            <span class="ms-1">Services</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesToggle">
+                            <li><a class="dropdown-item" href="bipolar-disorder.html">Bipolar Disorder</a></li>
+                            <li><a class="dropdown-item" href="ADD-ADHD.html">ADD/ADHD</a></li>
+                            <li><a class="dropdown-item" href="anxiety-disorder.html">Anxiety Disorder</a></li>
+                            <li><a class="dropdown-item" href="depression.html">Depression</a></li>
+                            <li><a class="dropdown-item" href="ptsd.html">PTSD</a></li>
+                            <li><a class="dropdown-item" href="emotional-stress.html">Emotional Stress</a></li>
+                            <li><a class="dropdown-item" href="schizophrenia.html">Schizophrenia</a></li>
+                            <li><a class="dropdown-item" href="psychosis.html">Psychosis</a></li>
+                            <li><a class="dropdown-item" href="panic-disorder.html">Panic Disorder</a></li>
+                            <li><a class="dropdown-item" href="autism-spectrum.html">Autism Spectrum</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active d-flex align-items-center" href="insurances.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            Insurance
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link d-flex align-items-center" href="contact-us.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-3">
+                    <a class="btn btn-blue-icon" href="contact-us.html" role="button" aria-label="Book An Appointment">
+                        <span class="icon-container" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                            </svg>
+                        </span>
+                        Book An Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="insurance-hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center"> <!-- Centers the column -->
+                <div class="col-lg-8">
+                    <div class="insurance-hero-text">
+                        <h1>Insurance <span class="highlight-blue">We Accept</span></h1>
+                        <p class="lead">
+                            At Armor Psychiatry, we work with a wide range of insurance providers to make mental health
+                            care accessible.
+                            Below is our current list of accepted insurance plans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Insurance Plans Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title">Accepted <span class="text-primary">Insurance Providers</span></h2>
+                    <p class="lead">We accept most major insurance plans including commercial, Medicare, and Medicaid
+                    </p>
+                </div>
+            </div>
+
+            <!-- Search and Alphabet Navigation -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="bg-white p-4 rounded shadow-sm section-border">
+                        <div class="search-container mb-4">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="insuranceSearch" class="form-control"
+                                placeholder="Search insurance providers...">
+                        </div>
+
+                        <div class="alphabet-nav">
+                            <a href="#" data-letter="all">All</a>
+                            <a href="#" data-letter="a">A</a>
+                            <a href="#" data-letter="b">B</a>
+                            <a href="#" data-letter="c">C</a>
+                            <a href="#" data-letter="d">D</a>
+                            <a href="#" data-letter="e">E</a>
+                            <a href="#" data-letter="f">F</a>
+                            <a href="#" data-letter="g">G</a>
+                            <a href="#" data-letter="h">H</a>
+                            <a href="#" data-letter="i">I</a>
+                            <a href="#" data-letter="m">M</a>
+                            <a href="#" data-letter="n">N</a>
+                            <a href="#" data-letter="o">O</a>
+                            <a href="#" data-letter="p">P</a>
+                            <a href="#" data-letter="r">R</a>
+                            <a href="#" data-letter="s">S</a>
+                            <a href="#" data-letter="t">T</a>
+                            <a href="#" data-letter="u">U</a>
+                            <a href="#" data-letter="z">Z</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Column A -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="a">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">A</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">AARP</li>
+                            <li class="mb-2 insurance-item">Aetna</li>
+                            <li class="mb-2 insurance-item">Aetna Better Health</li>
+                            <li class="mb-2 insurance-item">AllyAlign Health</li>
+                            <li class="mb-2 insurance-item">American Health Advantage of Florida</li>
+                            <li class="mb-2 insurance-item">AVMED Florida Exchange – (UBH Plan)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column B -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="b">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">B</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">BEACON HEALTH OPTIONS COMMERCIAL NON-HMO</li>
+                            <li class="mb-2 insurance-item">BEACON HEALTH OPTIONS MEDICARE ADVANTAGE</li>
+                            <li class="mb-2 insurance-item">BEACON HEALTH OPTIONS MEDICAID NETWORK</li>
+                            <li class="mb-2 insurance-item">Behavioral Health Systems (BHS)</li>
+                            <li class="mb-2 insurance-item">BSN</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column C -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="c">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">C</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Carisk Behavioral Health</li>
+                            <li class="mb-2 insurance-item">Carelon</li>
+                            <li class="mb-2 insurance-item">Careplus</li>
+                            <li class="mb-2 insurance-item">Cigna – Evernorth – Allegiance</li>
+                            <li class="mb-2 insurance-item">Clear Health Alliance</li>
+                            <li class="mb-2 insurance-item">Curative</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column D -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="d">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">D</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Devoted</li>
+                            <li class="mb-2 insurance-item">Doctors Healthcare Plans</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column E -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="e">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">E</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Emblem Health</li>
+                            <li class="mb-2 insurance-item">EMI Health</li>
+                            <li class="mb-2 insurance-item">Evolution Health System</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column F -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="f">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">F</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">First Health Network</li>
+                            <li class="mb-2 insurance-item">Florida Blue</li>
+                            <li class="mb-2 insurance-item">Florida Community Care</li>
+                            <li class="mb-2 insurance-item">Florida Complete Care</li>
+                            <li class="mb-2 insurance-item">Freedom</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column G -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="g">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">G</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">GEHA</li>
+                            <li class="mb-2 insurance-item">Georgia Exchange Plan (Optum)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column H -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="h">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">H</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Health Sun</li>
+                            <li class="mb-2 insurance-item">Health First</li>
+                            <li class="mb-2 insurance-item">Health Options</li>
+                            <li class="mb-2 insurance-item">Humana Health Horizons</li>
+                            <li class="mb-2 insurance-item">Humana Medicare</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column I -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="i">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">I</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Innovation Health</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column M -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="m">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">M</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Magellan</li>
+                            <li class="mb-2 insurance-item">Mass Advantage</li>
+                            <li class="mb-2 insurance-item">Mail Handlers Benefit Plan</li>
+                            <li class="mb-2 insurance-item">Medicaid</li>
+                            <li class="mb-2 insurance-item">Medicare</li>
+                            <li class="mb-2 insurance-item">Molina</li>
+                            <li class="mb-2 insurance-item">Multiplan</li>
+                            <li class="mb-2 insurance-item">Multiplan – PHCS</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column N -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="n">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">N</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">NEW YORK STATE EMPIRE PLAN</li>
+                            <li class="mb-2 insurance-item">Neighborhood Health Partnership, Inc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column O -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="o">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">O</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Optimum</li>
+                            <li class="mb-2 insurance-item">Optum Behavioral Health – UHC</li>
+                            <li class="mb-2 insurance-item">Optum Community Care – VACCN</li>
+                            <li class="mb-2 insurance-item">Oscar</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column P -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="p">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">P</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Partners Direct Health</li>
+                            <li class="mb-2 insurance-item">PEHP Health & Benefits</li>
+                            <li class="mb-2 insurance-item">Preferred Care Partners</li>
+                            <li class="mb-2 insurance-item">Prime Health Services</li>
+                            <li class="mb-2 insurance-item">Providence Plan Partners – Commercial</li>
+                            <li class="mb-2 insurance-item">Providence Plan Partners – Medicare</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column R -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="r">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">R</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Railroad Medicare</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column S -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="s">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">S</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Simply Healthcare</li>
+                            <li class="mb-2 insurance-item">Sunshine – Ambetter – Wellcare – Allcare</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column T -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="t">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">T</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Tricare East</li>
+                            <li class="mb-2 insurance-item">Tricare Prime</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column U -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="u">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">U</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">UHC Community Plan</li>
+                            <li class="mb-2 insurance-item">UHP Administrator – Claim Watcher</li>
+                            <li class="mb-2 insurance-item">UMR</li>
+                            <li class="mb-2 insurance-item">UNICARE_GIC</li>
+                            <li class="mb-2 insurance-item">Ultimate Health</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Column Z -->
+                <div class="col-md-6 col-lg-3 mb-4 insurance-section" data-letter="z">
+                    <div class="insurance-list bg-white p-4 rounded shadow-sm section-border h-100">
+                        <h3 class="insurance-letter mb-3 text-primary">Z</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 insurance-item">Zenith</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trusted Companies Section -->
+    <section class="companies-section py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" style="color: var(--primary-color);">We accept <span
+                            class="text-primary">Insurance</span></h2>
+                    <p class="section-subtitle" style="color: var(--primary-color);">99% of patients have successfully
+                        booked with these insurances</p>
+                </div>
+            </div>
+
+            <div class="scrolling-banner-container">
+                <div class="scrolling-banner">
+                    <!-- First set of logos -->
+                    <div class="company-logo">
+                        <img src="./img/beacon-health.png" alt="Beacon Health" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/cigna.png" alt="Cigna" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/emblem.png" alt="Emblem" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/magellan.png" alt="Magellan" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/medicaid.jfif" alt="Medicaid" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/optum.png" alt="Optum" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/UMR.jfif" alt="UMR" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/tricare.jfif" alt="Tricare" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/unitedhealth.png" alt="United Health" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/molina.png" alt="Molina" class="img-fluid">
+                    </div>
+
+                    <!-- Duplicate set for seamless looping -->
+                    <div class="company-logo">
+                        <img src="./img/beacon-health.png" alt="Beacon Health" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/cigna.png" alt="Cigna" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/emblem.png" alt="Emblem" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/magellan.png" alt="Magellan" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/medicaid.jfif" alt="Medicaid" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/optum.png" alt="Optum" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/UMR.jfif" alt="UMR" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/tricare.jfif" alt="Tricare" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/unitedhealth.png" alt="United Health" class="img-fluid">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./img/molina.png" alt="Molina" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verification CTA -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="verification-cta p-4 p-lg-5 rounded-4 shadow-sm border-0 text-center section-border">
+                        <h2 class="mb-4">Verify Your Insurance Coverage</h2>
+                        <p class="lead mb-4">
+                            Insurance plans change frequently. We recommend verifying your benefits before your first
+                            visit.
+                            Our team is happy to assist you with insurance verification and answer any questions.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <a href="contact-us.html" class="btn btn-blue-icon">
+                                <span class="icon-container" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                                    </svg>
+                                </span>
+                                Contact Us
+                            </a>
+                            <a href="tel:+15551234567" class="btn btn-outline-blue">
+                                <span class="icon-container" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                                    </svg>
+                                </span>
+                                Call Now: (555) 123-4567
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <img src="./img/Armor-Psychiatry-Logo-01-01.png" alt="Armor Psychiatry Logo">
+                        <br>
+                        <p class="mb-3">Providing compassionate, expert mental health care to help you live your best
+                            life.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h5 class="mb-4 fw-semibold">Contact Info</h5>
+                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:info@armorpsychiatry.com">info@armorpsychiatry.com</a></p>
+                        <p><strong>Address:</strong> 123 Wellness Blvd, Suite 200, Mental Health City, ST 12345</p>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-social" aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="about-us.html" class="footer-link">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+                        <li class="mb-2"><a href="contact-us.html" class="footer-link">Contact</a></li>
+                        <li class="mb-2"><a href="insurances.html" class="footer-link">Insurance</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="bipolar-disorder.html" class="footer-link">Bipolar Disorder</a></li>
+                        <li class="mb-2"><a href="ADD-ADHD.html" class="footer-link">ADD/ADHD</a></li>
+                        <li class="mb-2"><a href="anxiety-disorder.html" class="footer-link">Anxiety Disorder</a></li>
+                        <li class="mb-2"><a href="depression.html" class="footer-link">Depression</a></li>
+                        <li class="mb-2"><a href="ptsd.html" class="footer-link">PTSD</a></li>
+                        <li class="mb-2"><a href="emotional-stress.html" class="footer-link">Emotional Stress</a></li>
+                        <li class="mb-2"><a href="schizophrenia.html" class="footer-link">Schizophrenia</a></li>
+                        <li class="mb-2"><a href="psychosis.html" class="footer-link">Psychosis</a></li>
+                        <li class="mb-2"><a href="panic-disorder.html" class="footer-link">Panic Disorder</a></li>
+                        <li class="mb-2"><a href="austim-spectrum.html" class="footer-link">Austim Spectrum</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for mental health tips and updates.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control footer-input" placeholder="Your Email"
+                                aria-label="Your Email">
+                            <button class="btn btn-light footer-subscribe-btn" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="small text-white-50 mb-0">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-white-50 opacity-25">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">© 2023 Armor Psychiatry. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+                        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS-->
+    <script src="./js/script.js"></script>
+
+    <script>
+        // Alphabet navigation functionality
+        document.querySelectorAll('.alphabet-nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const letter = this.getAttribute('data-letter');
+
+                // Update active state
+                document.querySelectorAll('.alphabet-nav a').forEach(a => {
+                    a.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                // Show/hide sections
+                if (letter === 'all') {
+                    document.querySelectorAll('.insurance-section').forEach(section => {
+                        section.style.display = 'block';
+                    });
+                } else {
+                    document.querySelectorAll('.insurance-section').forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    document.querySelectorAll(`.insurance-section[data-letter="${letter}"]`).forEach(section => {
+                        section.style.display = 'block';
+                    });
+                }
+
+                // Scroll to first visible section
+                const firstVisible = document.querySelector('.insurance-section[style="display: block;"]');
+                if (firstVisible) {
+                    firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Search functionality
+        document.getElementById('insuranceSearch').addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+
+            if (searchTerm.length > 0) {
+                // Reset alphabet filter
+                document.querySelectorAll('.alphabet-nav a').forEach(a => {
+                    a.classList.remove('active');
+                });
+                document.querySelector('.alphabet-nav a[data-letter="all"]').classList.add('active');
+
+                document.querySelectorAll('.insurance-section').forEach(section => {
+                    section.style.display = 'block';
+                });
+
+                let hasMatches = false;
+
+                document.querySelectorAll('.insurance-item').forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        item.innerHTML = text.replace(new RegExp(searchTerm, 'gi'), match =>
+                            `<span class="highlight">${match}</span>`);
+                        hasMatches = true;
+                    } else {
+                        item.innerHTML = text;
+                    }
+                });
+
+                // Hide sections with no matches
+                document.querySelectorAll('.insurance-section').forEach(section => {
+                    const items = section.querySelectorAll('.insurance-item');
+                    let sectionHasMatches = false;
+
+                    items.forEach(item => {
+                        if (item.innerHTML.includes('highlight')) {
+                            sectionHasMatches = true;
+                        }
+                    });
+
+                    if (!sectionHasMatches) {
+                        section.style.display = 'none';
+                    }
+                });
+
+                if (!hasMatches) {
+                    // Show no results message
+                    // You could add a "no results" element here if needed
+                }
+            } else {
+                // Reset search
+                document.querySelectorAll('.insurance-item').forEach(item => {
+                    item.innerHTML = item.textContent;
+                });
+                document.querySelectorAll('.insurance-section').forEach(section => {
+                    section.style.display = 'block';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

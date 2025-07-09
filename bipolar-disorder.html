@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bipolar Disorder Treatment - Armor Psychiatry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fs-2" href="index.html"
+                style="letter-spacing:1px; font-family:'Segoe UI', Arial, sans-serif;">
+                Armor <span style="color:#2C3D4D; font-weight:500;">Psychiatry</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3z"></path>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="about-us.html"
+                            id="aboutDropdown" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M10 16l-4-4h8z" />
+                            </svg>
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="services.html"
+                            id="servicesToggle" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 19h16v-14H4z"></path>
+                                <line x1="12" y1="17" x2="12" y2="10"></line>
+                                <line x1="8" y1="13" x2="16" y2="13"></line>
+                            </svg>
+                            <span class="ms-1">Services</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesToggle">
+                            <li><a class="dropdown-item" href="bipolar-disorder.html">Bipolar Disorder</a></li>
+                            <li><a class="dropdown-item" href="ADD-ADHD.html">ADD/ADHD</a></li>
+                            <li><a class="dropdown-item" href="anxiety-disorder.html">Anxiety Disorder</a></li>
+                            <li><a class="dropdown-item" href="depression.html">Depression</a></li>
+                            <li><a class="dropdown-item" href="ptsd.html">PTSD</a></li>
+                            <li><a class="dropdown-item" href="emotional-stress.html">Emotional Stress</a></li>
+                            <li><a class="dropdown-item" href="schizophrenia.html">Schizophrenia</a></li>
+                            <li><a class="dropdown-item" href="psychosis.html">Psychosis</a></li>
+                            <li><a class="dropdown-item" href="panic-disorder.html">Panic Disorder</a></li>
+                            <li><a class="dropdown-item" href="autism-spectrum.html">Autism Spectrum</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active d-flex align-items-center" href="insurances.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            Insurance
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link d-flex align-items-center" href="contact-us.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-3">
+                    <a class="btn btn-blue-icon" href="contact-us.html" role="button" aria-label="Book An Appointment">
+                        <span class="icon-container" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                            </svg>
+                        </span>
+                        Book An Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="service-hero-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="service-hero-text">
+                        <h1>Bipolar Disorder <span class="highlight-blue">Treatment</span></h1>
+                        <p class="lead">Specialized care for mood stabilization and long-term wellness</p>
+                        <div class="breadcrumb">
+                            <a href="../index.html">Home</a> >
+                            <a href="../services.html">Services</a> >
+                            <span>Bipolar Disorder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <h2 class="mb-4">Get Help for <span class="text-primary">Bipolar Disorder</span></h2>
+                        <p class="lead">
+                            At Armor Psychiatry, we understand the challenges of living with bipolar disorder. Our
+                            compassionate team of specialists is dedicated to providing personalized care that addresses
+                            your unique needs. Whether you're experiencing manic, hypomanic, or depressive episodes, we
+                            are here to help you find stability and improve your quality of life.
+                        </p>
+
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="me-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Call Us Today</h5>
+                                <p class="mb-0 text-primary fw-bold">(555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="me-4">
+                                <div class="icon-box">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email Us</h5>
+                                <p class="mb-0 text-primary fw-bold">adhd@armorpsychiatry.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-form bg-white p-4 p-lg-5 rounded shadow-sm">
+                        <h3 class="mb-4">Schedule a Consultation</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">How can we help?</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="consent" required>
+                                        <label class="form-check-label small" for="consent">
+                                            I consent to Armor Psychiatry contacting me about my inquiry
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="./img/bipolar-diorder2.jpeg" alt="Bipolar disorder treatment"
+                            class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <h2 class="section-title mb-4">Understanding <span class="text-primary">Bipolar Disorder</span>
+                        </h2>
+                        <p>Bipolar disorder is a complex mental health condition characterized by extreme mood swings
+                            that include emotional highs (mania or hypomania) and lows (depression). At Armor
+                            Psychiatry, we provide comprehensive, evidence-based treatment to help stabilize moods and
+                            improve quality of life.</p>
+                        <p>Our approach combines medication management with psychotherapy and lifestyle interventions
+                            tailored to each patient's unique needs and bipolar subtype (Bipolar I, Bipolar II, or
+                            Cyclothymic Disorder).</p>
+
+                        <div class="row mt-4">
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="2.8" data-suffix="%">0%</h3>
+                                    <p class="mb-0">of U.S. adults</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="83" data-suffix="%">0%</h3>
+                                    <p class="mb-0">Severe cases</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="25" data-suffix="">0</h3>
+                                    <p class="mb-0">Average age onset</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-4">
+                                <div class="counter-box">
+                                    <h3 class="text-primary mb-0 counter" data-target="60" data-suffix="%">0%</h3>
+                                    <p class="mb-0">With family history</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Recognizing the <span class="text-primary">Symptoms</span></h2>
+                    <p class="lead">Bipolar disorder symptoms vary between manic/hypomanic and depressive episodes</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="symptom-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-arrow-up text-white"></i>
+                        </div>
+                        <h4>Manic/Hypomanic Episodes</h4>
+                        <ul class="symptom-list">
+                            <li>Abnormally upbeat, jumpy or wired</li>
+                            <li>Increased energy and activity</li>
+                            <li>Exaggerated sense of well-being</li>
+                            <li>Decreased need for sleep</li>
+                            <li>Racing thoughts and rapid speech</li>
+                            <li>Impulsive or risky behavior</li>
+                            <li>Poor decision-making</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="symptom-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-arrow-down text-white"></i>
+                        </div>
+                        <h4>Depressive Episodes</h4>
+                        <ul class="symptom-list">
+                            <li>Persistent sad or empty mood</li>
+                            <li>Loss of interest in activities</li>
+                            <li>Significant weight changes</li>
+                            <li>Insomnia or sleeping too much</li>
+                            <li>Fatigue or loss of energy</li>
+                            <li>Feelings of worthlessness</li>
+                            <li>Difficulty concentrating</li>
+                            <li>Thoughts of death/suicide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Our Treatment <span class="text-primary">Approach</span></h2>
+                    <p class="lead">Comprehensive, personalized care for bipolar disorder management</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Treatment 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="treatment-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-pills text-white"></i>
+                        </div>
+                        <h4>Medication Management</h4>
+                        <p>Careful prescription and monitoring of mood stabilizers, antipsychotics, antidepressants, and
+                            other medications to control symptoms and prevent episodes.</p>
+                        <ul class="treatment-features">
+                            <li>Lithium</li>
+                            <li>Anticonvulsants</li>
+                            <li>Atypical antipsychotics</li>
+                            <li>Personalized regimens</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Treatment 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="treatment-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-comments text-white"></i>
+                        </div>
+                        <h4>Psychotherapy</h4>
+                        <p>Evidence-based talk therapies to help manage symptoms, identify triggers, and develop coping
+                            strategies.</p>
+                        <ul class="treatment-features">
+                            <li>Cognitive Behavioral Therapy</li>
+                            <li>Family-Focused Therapy</li>
+                            <li>Interpersonal Therapy</li>
+                            <li>Psychoeducation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Treatment 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="treatment-card h-100 p-4 rounded-4 shadow-sm border-0">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-heartbeat text-white"></i>
+                        </div>
+                        <h4>Lifestyle Management</h4>
+                        <p>Guidance on sleep hygiene, stress reduction, exercise, and nutrition to support mood
+                            stability.</p>
+                        <ul class="treatment-features">
+                            <li>Sleep regulation</li>
+                            <li>Stress management</li>
+                            <li>Exercise planning</li>
+                            <li>Nutritional guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Specialists Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Bipolar Disorder <span class="text-primary">Specialists</span></h2>
+                <p class="lead">Our team has extensive experience in bipolar disorder treatment</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Specialist 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/specialist-1.jpg" alt="Dr. Sarah Williamson" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">Dr. Sarah Williamson</h4>
+                            <p class="text-primary mb-3">Psychiatrist</p>
+                            <p class="small">15+ years specializing in mood disorders and complex bipolar cases.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialist 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/specialist-2.jpg" alt="Dr. Michael Chen" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">Dr. Michael Chen</h4>
+                            <p class="text-primary mb-3">Psychiatrist</p>
+                            <p class="small">Expert in medication management for bipolar spectrum disorders.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialist 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/therapist-1.jpg" alt="Emily Rodriguez" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">Emily Rodriguez</h4>
+                            <p class="text-primary mb-3">Clinical Psychologist</p>
+                            <p class="small">Specializes in CBT and family therapy for bipolar disorder.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialist 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="specialist-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="specialist-img-container">
+                            <img src="../img/np-1.jpg" alt="David Johnson" class="img-fluid">
+                        </div>
+                        <div class="specialist-content p-4">
+                            <h4 class="mb-1">David Johnson</h4>
+                            <p class="text-primary mb-3">Psychiatric Nurse Practitioner</p>
+                            <p class="small">Focuses on holistic approaches to bipolar management.</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <a href="#" class="team-social" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social" aria-label="View profile">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="our-team.html" class="btn btn-blue-icon">
+                    Meet the Full Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Bipolar Disorder <span class="text-primary">FAQs</span></h2>
+                    <p class="lead">Common questions about bipolar disorder treatment</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="bipolarFaqAccordion">
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true"
+                                    aria-controls="faqCollapseOne">
+                                    What's the difference between Bipolar I and Bipolar II?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="faqHeadingOne" data-bs-parent="#bipolarFaqAccordion">
+                                <div class="accordion-body">
+                                    Bipolar I disorder involves manic episodes that last at least 7 days or are so
+                                    severe that hospitalization is needed. Depressive episodes typically occur as well.
+                                    Bipolar II involves a pattern of depressive episodes and hypomanic episodes (less
+                                    severe than full mania) but no full manic episodes. Both types require treatment but
+                                    may have different medication approaches.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false"
+                                    aria-controls="faqCollapseTwo">
+                                    How long does treatment for bipolar disorder last?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                                data-bs-parent="#bipolarFaqAccordion">
+                                <div class="accordion-body">
+                                    Bipolar disorder typically requires lifelong treatment, even during periods when you
+                                    feel better. Maintenance treatment helps prevent relapses. The specific treatment
+                                    plan may evolve over time based on your response and changing needs. Many patients
+                                    achieve long periods of stability with proper treatment.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false"
+                                    aria-controls="faqCollapseThree">
+                                    Are medications always necessary for bipolar disorder?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingThree" data-bs-parent="#bipolarFaqAccordion">
+                                <div class="accordion-body">
+                                    Medication is considered essential for most people with bipolar disorder, especially
+                                    for Bipolar I. Mood stabilizers help prevent the extreme highs and lows. Some people
+                                    with Bipolar II or cyclothymia may manage with therapy and lifestyle changes alone,
+                                    but this is rare. We carefully evaluate each case to recommend the most appropriate
+                                    treatment plan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingFour">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false"
+                                    aria-controls="faqCollapseFour">
+                                    Can bipolar disorder be cured?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFour" data-bs-parent="#bipolarFaqAccordion">
+                                <div class="accordion-body">
+                                    While there's no cure for bipolar disorder, it can be effectively managed with
+                                    proper treatment. Many people with bipolar disorder lead full, productive lives when
+                                    they commit to their treatment plan. The goal is to control symptoms, prevent
+                                    episodes, and maintain quality of life. New treatments continue to improve outcomes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 rounded shadow-sm">
+                            <h3 class="accordion-header" id="faqHeadingFive">
+                                <button class="accordion-button collapsed bg-white rounded" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false"
+                                    aria-controls="faqCollapseFive">
+                                    How can family members support someone with bipolar disorder?
+                                </button>
+                            </h3>
+                            <div id="faqCollapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="faqHeadingFive" data-bs-parent="#bipolarFaqAccordion">
+                                <div class="accordion-body">
+                                    Family support is crucial. Educate yourself about the disorder, encourage treatment
+                                    adherence, recognize early warning signs of episodes, maintain a stable home
+                                    environment, practice good communication, and take care of your own mental health.
+                                    We offer family therapy sessions to help loved ones understand how best to support
+                                    recovery.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="cta-card p-5 rounded-4 shadow-sm border-0" style="background-color: #f7fbff;">
+                        <h2 class="mb-4">Ready to take control of your mood swings?</h2>
+                        <p class="lead mb-4">Our bipolar disorder specialists are here to help you achieve stability and
+                            wellness.</p>
+                        <div class="d-inline-flex gap-3">
+                            <button class="btn btn-blue-icon" type="button">
+                                <span class="icon-container" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                                    </svg>
+                                </span>
+                                Book An Appointment
+                            </button>
+
+                            <button class="btn btn-outline-blue" type="button">
+                                <span class="icon-container" style="background: transparent; border-radius: 0.25rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white"
+                                        viewBox="0 0 24 24">
+                                        <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zm-11 0h7v7H3v-7z" />
+                                    </svg>
+                                </span>
+                                All Services
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <img src="./img/Armor-Psychiatry-Logo-01-01.png" alt="Armor Psychiatry Logo">
+                        <br>
+                        <p class="mb-3">Providing compassionate, expert mental health care to help you live your best
+                            life.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h5 class="mb-4 fw-semibold">Contact Info</h5>
+                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:info@armorpsychiatry.com">info@armorpsychiatry.com</a></p>
+                        <p><strong>Address:</strong> 123 Wellness Blvd, Suite 200, Mental Health City, ST 12345</p>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-social" aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="about-us.html" class="footer-link">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+                        <li class="mb-2"><a href="contact-us.html" class="footer-link">Contact</a></li>
+                        <li class="mb-2"><a href="insurances.html" class="footer-link">Insurance</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="bipolar-disorder.html" class="footer-link">Bipolar Disorder</a></li>
+                        <li class="mb-2"><a href="ADD-ADHD.html" class="footer-link">ADD/ADHD</a></li>
+                        <li class="mb-2"><a href="anxiety-disorder.html" class="footer-link">Anxiety Disorder</a></li>
+                        <li class="mb-2"><a href="depression.html" class="footer-link">Depression</a></li>
+                        <li class="mb-2"><a href="ptsd.html" class="footer-link">PTSD</a></li>
+                        <li class="mb-2"><a href="emotional-stress.html" class="footer-link">Emotional Stress</a></li>
+                        <li class="mb-2"><a href="schizophrenia.html" class="footer-link">Schizophrenia</a></li>
+                        <li class="mb-2"><a href="psychosis.html" class="footer-link">Psychosis</a></li>
+                        <li class="mb-2"><a href="panic-disorder.html" class="footer-link">Panic Disorder</a></li>
+                        <li class="mb-2"><a href="austim-spectrum.html" class="footer-link">Austim Spectrum</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for mental health tips and updates.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control footer-input" placeholder="Your Email"
+                                aria-label="Your Email">
+                            <button class="btn btn-light footer-subscribe-btn" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="small text-white-50 mb-0">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-white-50 opacity-25">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">© 2023 Armor Psychiatry. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+                        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--custom js-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

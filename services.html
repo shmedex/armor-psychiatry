@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services - Armor Psychiatry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fs-2" href="index.html"
+        style="letter-spacing:1px; font-family:'Segoe UI', Arial, sans-serif;">
+        Armor <span style="color:#2C3D4D; font-weight:500;">Psychiatry</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3z"></path>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="about-us.html" id="aboutDropdown"
+              role="button" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="14" height="14" fill="none"
+                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M10 16l-4-4h8z" />
+              </svg>
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="services.html" id="servicesToggle"
+              role="button" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M4 19h16v-14H4z"></path>
+                <line x1="12" y1="17" x2="12" y2="10"></line>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+              </svg>
+              <span class="ms-1">Services</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesToggle">
+              <li><a class="dropdown-item" href="bipolar-disorder.html">Bipolar Disorder</a></li>
+              <li><a class="dropdown-item" href="ADD-ADHD.html">ADD/ADHD</a></li>
+              <li><a class="dropdown-item" href="anxiety-disorder.html">Anxiety Disorder</a></li>
+              <li><a class="dropdown-item" href="depression.html">Depression</a></li>
+              <li><a class="dropdown-item" href="ptsd.html">PTSD</a></li>
+              <li><a class="dropdown-item" href="emotional-stress.html">Emotional Stress</a></li>
+              <li><a class="dropdown-item" href="schizophrenia.html">Schizophrenia</a></li>
+              <li><a class="dropdown-item" href="psychosis.html">Psychosis</a></li>
+              <li><a class="dropdown-item" href="panic-disorder.html">Panic Disorder</a></li>
+              <li><a class="dropdown-item" href="autism-spectrum.html">Autism Spectrum</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link active d-flex align-items-center" href="insurances.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              Insurance
+            </a>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link d-flex align-items-center" href="contact-us.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex ms-lg-3">
+          <a class="btn btn-blue-icon" href="contact-us.html" role="button" aria-label="Book An Appointment">
+            <span class="icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+              </svg>
+            </span>
+            Book An Appointment
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="services-hero-section text-center position-relative">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="services-hero-text">
+            <h1>Our <span class="highlight-blue">Services</span></h1>
+            <p class="lead">Comprehensive mental health care tailored to your unique needs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview 
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="position-relative">
+            <img src="./img/services-1.jpg" alt="Mental health services" class="img-fluid rounded shadow">
+            <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded shadow-sm m-3">
+              <h5 class="mb-0 text-primary">Holistic Approach to Mental Wellness</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ps-lg-5">
+            <h2 class="section-title mb-4">Comprehensive <span class="text-primary">Care</span></h2>
+            <p>At Armor Psychiatry, we offer a full spectrum of evidence-based mental health services designed to
+              address the unique needs of each individual. Our approach combines the latest psychiatric treatments with
+              compassionate, personalized care.</p>
+            <p>Whether you're seeking help for a specific condition or looking to improve your overall mental wellness,
+              our team of specialists is here to guide you through every step of your journey.</p>
+
+            <div class="row mt-4">
+              <div class="col-6 col-md-3 text-center mb-4">
+                <div class="counter-box">
+                  <h3 class="text-primary mb-0">15+</h3>
+                  <p class="mb-0">Treatment Options</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 text-center mb-4">
+                <div class="counter-box">
+                  <h3 class="text-primary mb-0">100%</h3>
+                  <p class="mb-0">Personalized Plans</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 text-center mb-4">
+                <div class="counter-box">
+                  <h3 class="text-primary mb-0">5</h3>
+                  <p class="mb-0">Specialty Areas</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 text-center mb-4">
+                <div class="counter-box">
+                  <h3 class="text-primary mb-0">24/7</h3>
+                  <p class="mb-0">Crisis Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- Our Services Section -->
+  <section class="py-5" style="background: linear-gradient( #2C3D4D 40% , #3cada6 60%);">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title" style="font-weight:700; letter-spacing:0.5px; color: #3cada6;">
+            Our Services
+          </h2>
+          <p style="color: #3cada6;">Expert care for a range of mental health conditions</p>
+          <div class="mx-auto mt-3" style="width:60px; height:4px; background: #3cada6; border-radius:2px;"></div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/bipolar-diorder2.jpeg" alt="Bipolar Disorder Service"
+                class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Bipolar Disorder</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-primary bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-cloud-sun text-white fs-4"></i>
+              </div>
+              <p>Comprehensive treatment for major depressive disorder and persistent depressive disorder, including
+                medication management, psychotherapy, and innovative treatments like TMS when appropriate.</p>
+              <ul class="service-features ps-3">
+                <li>Personalized treatment plans</li>
+                <li>Cognitive Behavioral Therapy</li>
+                <li>Medication management</li>
+                <li>Lifestyle interventions</li>
+              </ul>
+              <a href="bipolar-disorder.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/add-adhd-1.webp" alt="ADD/ADHD Service" class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">ADD/ADHD</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-success bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-hand-holding-heart text-white fs-4"></i>
+              </div>
+              <p>Specialized care for generalized anxiety, panic disorder, social anxiety, OCD, and PTSD using
+                evidence-based therapies and medication strategies tailored to your specific needs.</p>
+              <ul class="service-features ps-3">
+                <li>Exposure therapy</li>
+                <li>Mindfulness techniques</li>
+                <li>Medication options</li>
+                <li>Stress management</li>
+              </ul>
+              <a href="ADD-ADHD.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/anxiety-disorder1.jpg" alt="Anxiety Disorder Service"
+                class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Anxiety Disorder</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-warning bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-brain text-white fs-4"></i>
+              </div>
+              <p>Comprehensive management of bipolar I and II disorders with mood stabilizers, psychotherapy, and
+                lifestyle modifications to help achieve mood stability and prevent episodes.</p>
+              <ul class="service-features ps-3">
+                <li>Mood stabilization</li>
+                <li>Psychoeducation</li>
+                <li>Family therapy</li>
+                <li>Relapse prevention</li>
+              </ul>
+              <a href="anxiety-disorder.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/depression-1.jpg" alt="Depression Service" class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Depression</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-danger bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-bolt text-white fs-4"></i>
+              </div>
+              <p>Diagnosis and treatment for Attention-Deficit/Hyperactivity Disorder in children, adolescents, and
+                adults, including medication management and behavioral strategies.</p>
+              <ul class="service-features ps-3">
+                <li>Comprehensive evaluation</li>
+                <li>Stimulant/non-stimulant options</li>
+                <li>Behavioral coaching</li>
+                <li>Academic/work strategies</li>
+              </ul>
+              <a href="depression.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/ptsd-1.png" alt="Trauma & PTSD Service" class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Trauma & PTSD</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-info bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-shield text-white fs-4"></i>
+              </div>
+              <p>Specialized trauma-focused therapies including EMDR, cognitive processing therapy, and prolonged
+                exposure to help process traumatic experiences and reduce symptoms.</p>
+              <ul class="service-features ps-3">
+                <li>EMDR therapy</li>
+                <li>Trauma-focused CBT</li>
+                <li>Medication management</li>
+                <li>Safety planning</li>
+              </ul>
+              <a href="ptsd.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/emotional-stress2.png" alt="Emotional Stress Service"
+                class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Emotional Stress</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-secondary bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-comments text-white fs-4"></i>
+              </div>
+              <p>Individual, couples, and family therapy using evidence-based approaches including CBT, DBT,
+                psychodynamic therapy, and interpersonal therapy for various mental health concerns.</p>
+              <ul class="service-features ps-3">
+                <li>Cognitive Behavioral Therapy</li>
+                <li>Dialectical Behavior Therapy</li>
+                <li>Interpersonal Therapy</li>
+                <li>Family Systems Therapy</li>
+              </ul>
+              <a href="emotional-stress.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/schizophrenia.webp" alt="Schizophrenia Service" class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Schizophrenia</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-dark bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-comments text-white fs-4"></i>
+              </div>
+              <p>Individual, couples, and family therapy using evidence-based approaches including CBT, DBT,
+                psychodynamic therapy, and interpersonal therapy for various mental health concerns.</p>
+              <ul class="service-features ps-3">
+                <li>Cognitive Behavioral Therapy</li>
+                <li>Dialectical Behavior Therapy</li>
+                <li>Interpersonal Therapy</li>
+                <li>Family Systems Therapy</li>
+              </ul>
+              <a href="schizophrenia.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/psychosis2.png" alt="Psychosis Service" class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Psychosis</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-primary bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-comments text-white fs-4"></i>
+              </div>
+              <p>Individual, couples, and family therapy using evidence-based approaches including CBT, DBT,
+                psychodynamic therapy, and interpersonal therapy for various mental health concerns.</p>
+              <ul class="service-features ps-3">
+                <li>Cognitive Behavioral Therapy</li>
+                <li>Dialectical Behavior Therapy</li>
+                <li>Interpersonal Therapy</li>
+                <li>Family Systems Therapy</li>
+              </ul>
+              <a href="psychosis.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/panic-disorder2.png" alt="Panic Disorder Service" class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Panic Disorder</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-success bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-comments text-white fs-4"></i>
+              </div>
+              <p>Individual, couples, and family therapy using evidence-based approaches including CBT, DBT,
+                psychodynamic therapy, and interpersonal therapy for various mental health concerns.</p>
+              <ul class="service-features ps-3">
+                <li>Cognitive Behavioral Therapy</li>
+                <li>Dialectical Behavior Therapy</li>
+                <li>Interpersonal Therapy</li>
+                <li>Family Systems Therapy</li>
+              </ul>
+              <a href="panic-disorder.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-v2 h-100 overflow-hidden position-relative rounded-4 shadow border-0 bg-white">
+            <div class="service-image position-relative">
+              <img src="./img/austim-spectrum1.webp" alt="Autism Spectrum Service"
+                class="img-fluid w-100 object-fit-cover"
+                style="min-height:220px; object-fit:cover; border-radius: 0.75rem 0.75rem 0 0;">
+              <div class="service-overlay" style="background:rgba(6,141,196,0.18); position:absolute; inset:0;"></div>
+              <h3 class="service-title position-absolute bottom-0 start-0 w-100 text-white p-3"
+                style="background: #2C3D4D; border-radius:0 0 0.75rem 0.75rem;">Autism Spectrum</h3>
+            </div>
+            <div class="service-content p-4">
+              <div
+                class="icon-box mb-4 bg-warning bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center"
+                style="width:48px; height:48px;">
+                <i class="fas fa-comments text-white fs-4"></i>
+              </div>
+              <p>Individual, couples, and family therapy using evidence-based approaches including CBT, DBT,
+                psychodynamic therapy, and interpersonal therapy for various mental health concerns.</p>
+              <ul class="service-features ps-3">
+                <li>Cognitive Behavioral Therapy</li>
+                <li>Dialectical Behavior Therapy</li>
+                <li>Interpersonal Therapy</li>
+                <li>Family Systems Therapy</li>
+              </ul>
+              <a href="austim-spectrum.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Us Card-->
+        <div class="col-12">
+          <div
+            class="contact-card-specialty d-flex flex-column flex-md-row align-items-center justify-content-between rounded-4 shadow-lg p-4 p-lg-5 mt-4"
+            style="background: linear-gradient(90deg, #2C3D4D 50%, #f8fbff 500%);">
+            <div class="d-flex align-items-center mb-3 mb-md-0">
+              <div
+                class="icon-box bg-white bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center me-4"
+                style="width:64px; height:64px;">
+                <i class="fas fa-envelope-open-text text-white fs-2"></i>
+              </div>
+              <div>
+                <h3 class="text-white mb-1" style="font-weight:600;">Have Questions or Need Help?</h3>
+                <p class="mb-0 text-white-50">Our team is here to support you. Reach out for confidential guidance or to
+                  schedule an appointment.</p>
+              </div>
+            </div>
+            <div>
+              <a href="contact-us.html" class="btn btn-light btn-lg px-4 fw-semibold shadow-sm" style="color: #2C3D4D;">
+                <i class="fas fa-paper-plane me-2"></i>Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Us Card -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatment Approaches -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Treatment <span class="text-primary">Approaches</span></h2>
+        <p class="lead">Evidence-based methods tailored to your needs</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-card h-100 p-4 rounded-4 shadow-sm border-0">
+            <div class="icon-box mb-3">
+              <i class="fas fa-pills text-white"></i>
+            </div>
+            <h4>Medication Management</h4>
+            <p>Careful prescription and monitoring of psychiatric medications to optimize effectiveness while minimizing
+              side effects.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-card h-100 p-4 rounded-4 shadow-sm border-0">
+            <div class="icon-box mb-3">
+              <i class="fas fa-comment-dots text-white"></i>
+            </div>
+            <h4>Psychotherapy</h4>
+            <p>Various talk therapy modalities to help understand and change thought patterns, behaviors, and emotional
+              responses.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-card h-100 p-4 rounded-4 shadow-sm border-0">
+            <div class="icon-box mb-3">
+              <i class="fas fa-brain text-white"></i>
+            </div>
+            <h4>TMS Therapy</h4>
+            <p>Non-invasive brain stimulation for treatment-resistant depression, covered by most insurance plans.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-card h-100 p-4 rounded-4 shadow-sm border-0">
+            <div class="icon-box mb-3">
+              <i class="fas fa-heartbeat text-white"></i>
+            </div>
+            <h4>Lifestyle Medicine</h4>
+            <p>Incorporating nutrition, exercise, sleep hygiene, and stress reduction into treatment plans.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Help Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <div class="position-relative">
+            <img src="./img/who-we-help.jpg" alt="Who we help" class="img-fluid rounded shadow">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="pe-lg-5">
+            <h2 class="section-title mb-4">Who We <span class="text-primary">Help</span></h2>
+            <p class="lead">We provide specialized mental health care for individuals at all stages of life.</p>
+
+            <div class="accordion mt-4" id="whoWeHelpAccordion">
+              <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                <h3 class="accordion-header" id="headingAdults">
+                  <button class="accordion-button bg-white rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAdults" aria-expanded="true" aria-controls="collapseAdults">
+                    Adults (18-64)
+                  </button>
+                </h3>
+                <div id="collapseAdults" class="accordion-collapse collapse show" aria-labelledby="headingAdults"
+                  data-bs-parent="#whoWeHelpAccordion">
+                  <div class="accordion-body">
+                    Comprehensive care for adults dealing with depression, anxiety, bipolar disorder, work-related
+                    stress, relationship issues, and life transitions. We help you navigate the challenges of adulthood
+                    while maintaining mental wellness.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                <h3 class="accordion-header" id="headingSeniors">
+                  <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeniors" aria-expanded="false" aria-controls="collapseSeniors">
+                    Seniors (65+)
+                  </button>
+                </h3>
+                <div id="collapseSeniors" class="accordion-collapse collapse" aria-labelledby="headingSeniors"
+                  data-bs-parent="#whoWeHelpAccordion">
+                  <div class="accordion-body">
+                    Specialized geriatric psychiatry services addressing age-related mental health concerns, including
+                    dementia-related behaviors, late-life depression, anxiety about health or mortality, and medication
+                    management for complex medical regimens.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                <h3 class="accordion-header" id="headingAdolescents">
+                  <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAdolescents" aria-expanded="false" aria-controls="collapseAdolescents">
+                    Adolescents (13-17)
+                  </button>
+                </h3>
+                <div id="collapseAdolescents" class="accordion-collapse collapse" aria-labelledby="headingAdolescents"
+                  data-bs-parent="#whoWeHelpAccordion">
+                  <div class="accordion-body">
+                    Developmentally-appropriate care for teenagers dealing with academic stress, social pressures,
+                    emerging mental health conditions, self-esteem issues, and family conflicts. We work closely with
+                    parents and schools when appropriate.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 rounded shadow-sm">
+                <h3 class="accordion-header" id="headingYoungAdults">
+                  <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseYoungAdults" aria-expanded="false" aria-controls="collapseYoungAdults">
+                    Young Adults (18-25)
+                  </button>
+                </h3>
+                <div id="collapseYoungAdults" class="accordion-collapse collapse" aria-labelledby="headingYoungAdults"
+                  data-bs-parent="#whoWeHelpAccordion">
+                  <div class="accordion-body">
+                    Support for the unique challenges of young adulthood including college stress, career decisions,
+                    identity formation, and the transition to independence. We help build coping skills for this
+                    critical life stage.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="cta-card p-5 rounded-4 shadow-sm border-0" style="background-color: #f7fbff;">
+            <h2 class="mb-4">Struggling with focus or organization?</h2>
+            <p class="lead mb-4">Our ADHD specialists can help you develop strategies for success at any
+              age.</p>
+            <div class="d-inline-flex gap-3">
+              <button class="btn btn-blue-icon" type="button">
+                <span class="icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                  </svg>
+                </span>
+                Book An Appointment
+              </button>
+
+              <button class="btn btn-outline-blue" type="button">
+                <span class="icon-container" style="background: transparent; border-radius: 0.25rem;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 24 24">
+                    <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zm-11 0h7v7H3v-7z" />
+                  </svg>
+                </span>
+                All Services
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer-section text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="mb-4">
+            <img src="./img/Armor-Psychiatry-Logo-01-01.png" alt="Armor Psychiatry Logo">
+            <br>
+            <p class="mb-3">Providing compassionate, expert mental health care to help you live your best life.</p>
+          </div>
+
+          <div class="contact-info">
+            <h5 class="mb-4 fw-semibold">Contact Info</h5>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@armorpsychiatry.com">info@armorpsychiatry.com</a></p>
+            <p><strong>Address:</strong> 123 Wellness Blvd, Suite 200, Mental Health City, ST 12345</p>
+          </div>
+          <br>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Facebook">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="Twitter">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="Instagram">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4">
+          <h5 class="mb-4 fw-semibold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+            <li class="mb-2"><a href="about-us.html" class="footer-link">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+            <li class="mb-2"><a href="contact-us.html" class="footer-link">Contact</a></li>
+            <li class="mb-2"><a href="insurances.html" class="footer-link">Insurance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4 fw-semibold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="bipolar-disorder.html" class="footer-link">Bipolar Disorder</a></li>
+            <li class="mb-2"><a href="ADD-ADHD.html" class="footer-link">ADD/ADHD</a></li>
+            <li class="mb-2"><a href="anxiety-disorder.html" class="footer-link">Anxiety Disorder</a></li>
+            <li class="mb-2"><a href="depression.html" class="footer-link">Depression</a></li>
+            <li class="mb-2"><a href="ptsd.html" class="footer-link">PTSD</a></li>
+            <li class="mb-2"><a href="emotional-stress.html" class="footer-link">Emotional Stress</a></li>
+            <li class="mb-2"><a href="schizophrenia.html" class="footer-link">Schizophrenia</a></li>
+            <li class="mb-2"><a href="psychosis.html" class="footer-link">Psychosis</a></li>
+            <li class="mb-2"><a href="panic-disorder.html" class="footer-link">Panic Disorder</a></li>
+            <li class="mb-2"><a href="austim-spectrum.html" class="footer-link">Austim Spectrum</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4 fw-semibold">Newsletter</h5>
+          <p class="text-white-50 mb-3">Subscribe to our newsletter for mental health tips and updates.</p>
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control footer-input" placeholder="Your Email" aria-label="Your Email">
+              <button class="btn btn-light footer-subscribe-btn" type="button">Subscribe</button>
+            </div>
+          </form>
+          <p class="small text-white-50 mb-0">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+      </div>
+
+      <hr class="my-4 bg-white-50 opacity-25">
+
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-0 text-white-50">© 2023 Armor Psychiatry. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="small mb-0">
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

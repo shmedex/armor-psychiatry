@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Team - Armor Psychiatry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fs-2" href="index.html"
+                style="letter-spacing:1px; font-family:'Segoe UI', Arial, sans-serif;">
+                Armor <span style="color:#2C3D4D; font-weight:500;">Psychiatry</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3z"></path>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="about-us.html"
+                            id="aboutDropdown" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M10 16l-4-4h8z" />
+                            </svg>
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="services.html"
+                            id="servicesToggle" role="button" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 19h16v-14H4z"></path>
+                                <line x1="12" y1="17" x2="12" y2="10"></line>
+                                <line x1="8" y1="13" x2="16" y2="13"></line>
+                            </svg>
+                            <span class="ms-1">Services</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesToggle">
+                            <li><a class="dropdown-item" href="bipolar-disorder.html">Bipolar Disorder</a></li>
+                            <li><a class="dropdown-item" href="ADD-ADHD.html">ADD/ADHD</a></li>
+                            <li><a class="dropdown-item" href="anxiety-disorder.html">Anxiety Disorder</a></li>
+                            <li><a class="dropdown-item" href="depression.html">Depression</a></li>
+                            <li><a class="dropdown-item" href="ptsd.html">PTSD</a></li>
+                            <li><a class="dropdown-item" href="emotional-stress.html">Emotional Stress</a></li>
+                            <li><a class="dropdown-item" href="schizophrenia.html">Schizophrenia</a></li>
+                            <li><a class="dropdown-item" href="psychosis.html">Psychosis</a></li>
+                            <li><a class="dropdown-item" href="panic-disorder.html">Panic Disorder</a></li>
+                            <li><a class="dropdown-item" href="autism-spectrum.html">Autism Spectrum</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active d-flex align-items-center" href="insurances.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            Insurance
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link d-flex align-items-center" href="contact-us.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none"
+                                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-3">
+                    <a class="btn btn-blue-icon" href="contact-us.html" role="button" aria-label="Book An Appointment">
+                        <span class="icon-container" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                            </svg>
+                        </span>
+                        Book An Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="team-hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="team-hero-text">
+                        <h1>Meet Our Expert Team</span></h1>
+                        <p class="lead">Compassionate mental health professionals dedicated to your well-being</p>
+                        <div class="breadcrumb">
+                            <a href="../index.html">Home</a> >
+                            <a href="./about-us.html">About Us</a> >
+                            <span>Our Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Grid Section -->
+    <section class="team-grid-section">
+        <div class="container">
+            <h2 class="section-title-team">Our <span>Specialists</span></h2>
+            <p class="section-subtitle">Board-certified professionals with extensive experience in mental health care
+            </p>
+
+            <div class="row">
+                <!-- Psychiatrist 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="team-member-img">
+                            <img src="./img/doctor-1.jpg" alt="Dr. Sarah Williamson" class="img-fluid">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Dr. Sarah Williamson</h3>
+                            <p class="team-member-title">Founder & Lead Psychiatrist</p>
+                            <p class="team-member-bio">With over 15 years of experience, Dr. Williamson specializes in
+                                mood disorders and adult psychiatry.</p>
+
+                            <div class="team-member-specialties">
+                                <span class="specialty-badge">Bipolar Disorder</span>
+                                <span class="specialty-badge">Depression</span>
+                                <span class="specialty-badge">Anxiety</span>
+                                <span class="specialty-badge">PTSD</span>
+                            </div>
+
+                            <div class="team-social-links">
+                                <a href="#" class="team-social-link" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Twitter profile">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Research profile">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Psychiatrist 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="team-member-img">
+                            <img src="./img/doctor-2.jpg" alt="Dr. Michael Chen" class="img-fluid">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Dr. Michael Chen</h3>
+                            <p class="team-member-title">Child & Adolescent Psychiatrist</p>
+                            <p class="team-member-bio">Specializing in ADHD and developmental disorders with a focus on
+                                family-centered care.</p>
+
+                            <div class="team-member-specialties">
+                                <span class="specialty-badge">ADHD/ADD</span>
+                                <span class="specialty-badge">Autism Spectrum</span>
+                                <span class="specialty-badge">Behavioral Issues</span>
+                                <span class="specialty-badge">Learning Disorders</span>
+                            </div>
+
+                            <div class="team-social-links">
+                                <a href="#" class="team-social-link" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Twitter profile">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Research profile">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Psychiatrist 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="team-member-img">
+                            <img src="./img/doctor-3.jpg" alt="Dr. Priya Patel" class="img-fluid">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Dr. Priya Patel</h3>
+                            <p class="team-member-title">Psychiatrist - Women's Mental Health</p>
+                            <p class="team-member-bio">Expert in perinatal psychiatry and hormonal influences on mood
+                                disorders.</p>
+
+                            <div class="team-member-specialties">
+                                <span class="specialty-badge">Postpartum Depression</span>
+                                <span class="specialty-badge">PMDD</span>
+                                <span class="specialty-badge">Menopause Transition</span>
+                                <span class="specialty-badge">Trauma Recovery</span>
+                            </div>
+
+                            <div class="team-social-links">
+                                <a href="#" class="team-social-link" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Twitter profile">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Research profile">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="team-member-img">
+                            <img src="./img/therapist-1.jpg" alt="Emily Rodriguez" class="img-fluid">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Emily Rodriguez</h3>
+                            <p class="team-member-title">Licensed Clinical Psychologist</p>
+                            <p class="team-member-bio">Specializes in cognitive behavioral therapy and trauma-informed
+                                care approaches.</p>
+
+                            <div class="team-member-specialties">
+                                <span class="specialty-badge">CBT</span>
+                                <span class="specialty-badge">PTSD</span>
+                                <span class="specialty-badge">Anxiety Disorders</span>
+                                <span class="specialty-badge">DBT</span>
+                            </div>
+
+                            <div class="team-social-links">
+                                <a href="#" class="team-social-link" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Twitter profile">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Psychology Today profile">
+                                    <i class="fas fa-user-md"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="team-member-img">
+                            <img src="./img/therapist-2.jpg" alt="David Johnson" class="img-fluid">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">David Johnson</h3>
+                            <p class="team-member-title">Psychiatric Nurse Practitioner</p>
+                            <p class="team-member-bio">Focuses on medication management with a holistic approach to
+                                mental wellness.</p>
+
+                            <div class="team-member-specialties">
+                                <span class="specialty-badge">Medication Management</span>
+                                <span class="specialty-badge">Integrative Psychiatry</span>
+                                <span class="specialty-badge">Sleep Disorders</span>
+                                <span class="specialty-badge">Geriatric Psychiatry</span>
+                            </div>
+
+                            <div class="team-social-links">
+                                <a href="#" class="team-social-link" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Twitter profile">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Research profile">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Therapist 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="team-member-img">
+                            <img src="./img/therapist-3.jpg" alt="Marcus Williams" class="img-fluid">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Marcus Williams</h3>
+                            <p class="team-member-title">Licensed Clinical Social Worker</p>
+                            <p class="team-member-bio">Specializes in family therapy and support for caregivers of
+                                mentally ill loved ones.</p>
+
+                            <div class="team-member-specialties">
+                                <span class="specialty-badge">Family Therapy</span>
+                                <span class="specialty-badge">Caregiver Support</span>
+                                <span class="specialty-badge">Grief Counseling</span>
+                                <span class="specialty-badge">Substance Abuse</span>
+                            </div>
+
+                            <div class="team-social-links">
+                                <a href="#" class="team-social-link" aria-label="LinkedIn profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Twitter profile">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="team-social-link" aria-label="Psychology Today profile">
+                                    <i class="fas fa-user-md"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title-team">Our <span>Certifications</span></h2>
+                    <p class="section-subtitle">We maintain the highest standards of professional qualifications and
+                        continuing education</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="certifications-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="certification-title">Board Certified</h3>
+                        <p>All our psychiatrists are board certified by the American Board of Psychiatry and Neurology
+                            (ABPN).</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="certifications-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="certification-title">HIPAA Compliant</h3>
+                        <p>We strictly adhere to HIPAA regulations to ensure complete confidentiality of your health
+                            information.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="certifications-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="certification-title">Evidence-Based Practice</h3>
+                        <p>Our treatments are grounded in the latest research and evidence-based clinical guidelines.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="certifications-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="certification-title">Specialized Training</h3>
+                        <p>Our team regularly completes specialized training in cutting-edge therapeutic modalities.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="certifications-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="certification-title">Cultural Competency</h3>
+                        <p>We've completed extensive cultural competency training to serve diverse populations.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="certifications-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="certification-title">Award-Winning Care</h3>
+                        <p>Recognized by the National Committee for Quality Assurance for excellence in mental health
+                            care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="cta-card p-5 rounded-4 shadow-sm border-0" style="background-color: #f7fbff;">
+                        <h2 class="mb-4">Ready to start your journey to better mental health?</h2>
+                        <p class="lead mb-4">Our compassionate team is here to support you every step of the way.</p>
+                        <div class="d-inline-flex gap-3">
+                            <a href="contact-us.html" class="btn btn-blue-icon" role="button">
+                                <span class="icon-container" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+                                    </svg>
+                                </span>
+                                Book An Appointment
+                            </a>
+
+                            <a href="contact-us.html" class="btn btn-outline-blue" role="button">
+                                <span class="icon-container" style="background: transparent; border-radius: 0.25rem;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white"
+                                        viewBox="0 0 24 24">
+                                        <path d="M3 3h7v7H3V3zm11 0h7v7h-7V3zm0 11h7v7h-7v-7zm-11 0h7v7H3v-7z" />
+                                    </svg>
+                                </span>
+                                Contact Our Team
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <img src="./img/Armor-Psychiatry-Logo-01-01.png" alt="Armor Psychiatry Logo">
+                        <br>
+                        <p class="mb-3">Providing compassionate, expert mental health care to help you live your best
+                            life.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h5 class="mb-4 fw-semibold">Contact Info</h5>
+                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:info@armorpsychiatry.com">info@armorpsychiatry.com</a></p>
+                        <p><strong>Address:</strong> 123 Wellness Blvd, Suite 200, Mental Health City, ST 12345</p>
+                    </div>
+                    <br>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-social" aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="footer-social" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-2"><a href="about-us.html" class="footer-link">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+                        <li class="mb-2"><a href="contact-us.html" class="footer-link">Contact</a></li>
+                        <li class="mb-2"><a href="insurances.html" class="footer-link">Insurance</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="bipolar-disorder.html" class="footer-link">Bipolar Disorder</a></li>
+                        <li class="mb-2"><a href="ADD-ADHD.html" class="footer-link">ADD/ADHD</a></li>
+                        <li class="mb-2"><a href="anxiety-disorder.html" class="footer-link">Anxiety Disorder</a></li>
+                        <li class="mb-2"><a href="depression.html" class="footer-link">Depression</a></li>
+                        <li class="mb-2"><a href="ptsd.html" class="footer-link">PTSD</a></li>
+                        <li class="mb-2"><a href="emotional-stress.html" class="footer-link">Emotional Stress</a></li>
+                        <li class="mb-2"><a href="schizophrenia.html" class="footer-link">Schizophrenia</a></li>
+                        <li class="mb-2"><a href="psychosis.html" class="footer-link">Psychosis</a></li>
+                        <li class="mb-2"><a href="panic-disorder.html" class="footer-link">Panic Disorder</a></li>
+                        <li class="mb-2"><a href="austim-spectrum.html" class="footer-link">Austim Spectrum</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4 fw-semibold">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Subscribe to our newsletter for mental health tips and updates.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control footer-input" placeholder="Your Email"
+                                aria-label="Your Email">
+                            <button class="btn btn-light footer-subscribe-btn" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <p class="small text-white-50 mb-0">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-white-50 opacity-25">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">© 2023 Armor Psychiatry. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">
+                        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+                        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Armor Psychiatry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fs-2" href="index.html"
+        style="letter-spacing:1px; font-family:'Segoe UI', Arial, sans-serif;">
+        Armor <span style="color:#2C3D4D; font-weight:500;">Psychiatry</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4H9v4a2 2 0 0 1-2 2H3z"></path>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="about-us.html" id="aboutDropdown"
+              role="button" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon me-1" width="14" height="14" fill="none"
+                color="#2C3D4D" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M10 16l-4-4h8z" />
+              </svg>
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="services.html" id="servicesToggle"
+              role="button" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M4 19h16v-14H4z"></path>
+                <line x1="12" y1="17" x2="12" y2="10"></line>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+              </svg>
+              <span class="ms-1">Services</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesToggle">
+              <li><a class="dropdown-item" href="bipolar-disorder.html">Bipolar Disorder</a></li>
+              <li><a class="dropdown-item" href="ADD-ADHD.html">ADD/ADHD</a></li>
+              <li><a class="dropdown-item" href="anxiety-disorder.html">Anxiety Disorder</a></li>
+              <li><a class="dropdown-item" href="depression.html">Depression</a></li>
+              <li><a class="dropdown-item" href="ptsd.html">PTSD</a></li>
+              <li><a class="dropdown-item" href="emotional-stress.html">Emotional Stress</a></li>
+              <li><a class="dropdown-item" href="schizophrenia.html">Schizophrenia</a></li>
+              <li><a class="dropdown-item" href="psychosis.html">Psychosis</a></li>
+              <li><a class="dropdown-item" href="panic-disorder.html">Panic Disorder</a></li>
+              <li><a class="dropdown-item" href="autism-spectrum.html">Autism Spectrum</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link active d-flex align-items-center" href="insurances.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              Insurance
+            </a>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link d-flex align-items-center" href="contact-us.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="14" height="14" fill="none" color="#2C3D4D"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                focusable="false" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex ms-lg-3">
+          <a class="btn btn-blue-icon" href="contact-us.html" role="button" aria-label="Book An Appointment">
+            <span class="icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2A19.95 19.95 0 0 1 3 6.18 2 2 0 0 1 5 4h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.91 11a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7 2 2 0 0 1 1.72 2z" />
+              </svg>
+            </span>
+            Book An Appointment
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="contact-hero-section text-center position-relative">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-hero-text">
+            <h1>Contact <span class="highlight-blue">Armor Psychiatry</span></h1>
+            <p class="lead">We're here to help you on your mental health journey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title">Get in <span class="text-primary">Touch</span></h2>
+          <p class="lead">Choose the most convenient way to reach us</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Card 1 -->
+        <div class="col-md-4">
+          <div class="contact-method-card h-100 p-4 rounded-4 shadow-sm border-0 text-center">
+            <div class="icon-box mb-3 mx-auto">
+              <i class="fas fa-map-marker-alt text-white"></i>
+            </div>
+            <h4>Our Location</h4>
+            <p>123 Wellness Way, Suite 200<br>Anytown, ST 12345</p>
+            <a href="#" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#mapModal">
+              View Map & Directions
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Card 2 -->
+        <div class="col-md-4">
+          <div class="contact-method-card h-100 p-4 rounded-4 shadow-sm border-0 text-center">
+            <div class="icon-box mb-3 mx-auto">
+              <i class="fas fa-phone-alt text-white"></i>
+            </div>
+            <h4>Phone & Fax</h4>
+            <p>
+              <strong>Main:</strong> (555) 123-4567<br>
+              <strong>Fax:</strong> (555) 123-4568
+            </p>
+            <a href="tel:5551234567" class="btn btn-sm btn-outline-primary mt-2">
+              Call Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Card 3 -->
+        <div class="col-md-4">
+          <div class="contact-method-card h-100 p-4 rounded-4 shadow-sm border-0 text-center">
+            <div class="icon-box mb-3 mx-auto">
+              <i class="fas fa-envelope text-white"></i>
+            </div>
+            <h4>Email Us</h4>
+            <p>
+              <strong>General:</strong> info@armorpsychiatry.com<br>
+              <strong>Support:</strong> help@armorpsychiatry.com
+            </p>
+            <a href="mailto:info@armorpsychiatry.com" class="btn btn-sm btn-outline-primary mt-2">
+              Email Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title mb-4">Send Us a <span class="text-primary">Message</span></h2>
+          <p class="mb-4">Have questions or want to schedule an appointment? Fill out the form below and our team will
+            get back to you within 24-48 hours.</p>
+
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" class="form-label">First Name *</label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName" class="form-label">Last Name *</label>
+                <input type="text" class="form-control" id="lastName" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Service *</label>
+              <select class="form-select" id="subject" required>
+                <option value="" selected disabled>Select a Service</option>
+                <option value="bipolar-disorder">Bipolar Disorder</option>
+                <option value="add-adhd">ADD/ADHD</option>
+                <option value="anxiety-disorder">Anxiety Disorder</option>
+                <option value="depression">Depression</option>
+                <option value="ptsd">PTSD</option>
+                <option value="emotional-stress">Emotional Stress</option>
+                <option value="schizophrenia">Schizophrenia</option>
+                <option value="psychosis">Psychosis</option>
+                <option value="panic-disorder">Panic Disorder</option>
+                <option value="autism-spectrum">Autism Spectrum</option>
+              </select>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message *</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="consent" required>
+              <label class="form-check-label" for="consent">I consent to Armor Psychiatry contacting me about my inquiry
+                *</label>
+            </div>
+
+            <button type="submit" class="btn btn-blue-icon">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="contact-info-card h-100 p-4 rounded-4 shadow-sm border-0">
+            <h3 class="mb-4">Office Hours</h3>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between py-2 border-bottom">
+                <span>Monday - Friday</span>
+                <span>8:00 AM - 5:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between py-2 border-bottom">
+                <span>Saturday</span>
+                <span>9:00 AM - 1:00 PM</span>
+              </li>
+              <li class="d-flex justify-content-between py-2">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </li>
+            </ul>
+
+            <div class="mt-5">
+              <h3 class="mb-4">Emergency Contacts</h3>
+              <p>If you are experiencing a mental health emergency, please contact one of these resources immediately:
+              </p>
+
+              <div class="emergency-contact">
+                <h5 class="d-flex align-items-center">
+                  <span class="emergency-icon bg-danger me-2">
+                    <i class="fas fa-phone-alt text-white"></i>
+                  </span>
+                  National Suicide Prevention Lifeline
+                </h5>
+                <p class="ms-4">Call or text <strong>988</strong> (available 24/7)</p>
+              </div>
+
+              <div class="emergency-contact mt-3">
+                <h5 class="d-flex align-items-center">
+                  <span class="emergency-icon bg-danger me-2">
+                    <i class="fas fa-ambulance text-white"></i>
+                  </span>
+                  Crisis Text Line
+                </h5>
+                <p class="ms-4">Text <strong>HOME</strong> to 741741 (available 24/7)</p>
+              </div>
+
+              <div class="emergency-contact mt-3">
+                <h5 class="d-flex align-items-center">
+                  <span class="emergency-icon bg-danger me-2">
+                    <i class="fas fa-hospital text-white"></i>
+                  </span>
+                  Local Emergency Services
+                </h5>
+                <p class="ms-4">Call <strong>911</strong> or go to the nearest emergency room</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-0 bg-light">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <div class="col-12">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209132873!2d-73.98784492423944!3d40.74844097138977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTAuNyJX!5e0!3m2!1sen!2sus!4v1623862347216!5m2!1sen!2sus"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              aria-label="Map of Armor Psychiatry location"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title">Contact <span class="text-primary">FAQs</span></h2>
+          <p class="lead">Answers to common questions about reaching us</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="contactFaqAccordion">
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingOne">
+                <button class="accordion-button bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                  How soon can I get an appointment?
+                </button>
+              </h3>
+              <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+                data-bs-parent="#contactFaqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  New patient appointments are typically available within 1-2 weeks, depending on provider availability.
+                  We do keep a cancellation list for earlier appointments if they become available. Urgent cases are
+                  prioritized - please indicate if you need urgent care when contacting us.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingTwo">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                  Do you offer telehealth appointments?
+                </button>
+              </h3>
+              <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                data-bs-parent="#contactFaqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  Yes, we offer secure telehealth video appointments for established patients. Some initial evaluations
+                  may need to be in-person depending on your needs. Our staff can help determine what's appropriate for
+                  your situation when you schedule.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingThree">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                  What insurance plans do you accept?
+                </button>
+              </h3>
+              <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+                data-bs-parent="#contactFaqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  We accept most major insurance plans including Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare,
+                  and Medicare. Please contact our office to verify your specific coverage. We also offer self-pay
+                  options and can provide documentation for out-of-network reimbursement.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingFour">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                  What should I bring to my first appointment?
+                </button>
+              </h3>
+              <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+                data-bs-parent="#contactFaqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  Please bring your insurance card, photo ID, a list of current medications (including dosages), any
+                  relevant medical records, and completed new patient forms which we'll send you after scheduling.
+                  Arriving 15 minutes early for paperwork is recommended.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 rounded shadow-sm">
+              <h3 class="accordion-header" id="faqHeadingFive">
+                <button class="accordion-button collapsed bg-white rounded" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                  How do I request prescription refills?
+                </button>
+              </h3>
+              <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
+                data-bs-parent="#contactFaqAccordion" style="color: #333;">
+                <div class="accordion-body">
+                  Prescription refills should be requested through our patient portal or by calling our office during
+                  business hours. Please allow 48 hours for processing. Note that some medications may require an
+                  appointment before refilling. Controlled substances cannot be refilled outside office hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="mb-4">
+            <img src="./img/Armor-Psychiatry-Logo-01-01.png" alt="Armor Psychiatry Logo">
+            <br>
+            <p class="mb-3">Providing compassionate, expert mental health care to help you live your best life.</p>
+          </div>
+
+          <div class="contact-info">
+            <h5 class="mb-4 fw-semibold">Contact Info</h5>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@armorpsychiatry.com">info@armorpsychiatry.com</a></p>
+            <p><strong>Address:</strong> 123 Wellness Blvd, Suite 200, Mental Health City, ST 12345</p>
+          </div>
+          <br>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Facebook">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="Twitter">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="Instagram">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="#" class="footer-social" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4">
+          <h5 class="mb-4 fw-semibold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+            <li class="mb-2"><a href="about-us.html" class="footer-link">About Us</a></li>
+            <li class="mb-2"><a href="services.html" class="footer-link">Services</a></li>
+            <li class="mb-2"><a href="contact-us.html" class="footer-link">Contact</a></li>
+            <li class="mb-2"><a href="insurances.html" class="footer-link">Insurance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4 fw-semibold">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="bipolar-disorder.html" class="footer-link">Bipolar Disorder</a></li>
+            <li class="mb-2"><a href="ADD-ADHD.html" class="footer-link">ADD/ADHD</a></li>
+            <li class="mb-2"><a href="anxiety-disorder.html" class="footer-link">Anxiety Disorder</a></li>
+            <li class="mb-2"><a href="depression.html" class="footer-link">Depression</a></li>
+            <li class="mb-2"><a href="ptsd.html" class="footer-link">PTSD</a></li>
+            <li class="mb-2"><a href="emotional-stress.html" class="footer-link">Emotional Stress</a></li>
+            <li class="mb-2"><a href="schizophrenia.html" class="footer-link">Schizophrenia</a></li>
+            <li class="mb-2"><a href="psychosis.html" class="footer-link">Psychosis</a></li>
+            <li class="mb-2"><a href="panic-disorder.html" class="footer-link">Panic Disorder</a></li>
+            <li class="mb-2"><a href="austim-spectrum.html" class="footer-link">Austim Spectrum</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4 fw-semibold">Newsletter</h5>
+          <p class="text-white-50 mb-3">Subscribe to our newsletter for mental health tips and updates.</p>
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control footer-input" placeholder="Your Email" aria-label="Your Email">
+              <button class="btn btn-light footer-subscribe-btn" type="button">Subscribe</button>
+            </div>
+          </form>
+          <p class="small text-white-50 mb-0">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+      </div>
+
+      <hr class="my-4 bg-white-50 opacity-25">
+
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-0 text-white-50">© 2023 Armor Psychiatry. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="small mb-0">
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Map Modal -->
+  <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapModalLabel">Our Location</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209132873!2d-73.98784492423944!3d40.74844097138977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTAuNyJX!5e0!3m2!1sen!2sus!4v1623862347216!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            aria-label="Map of Armor Psychiatry location"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://maps.google.com?q=123+Wellness+Way,+Anytown,+ST+12345" class="btn btn-blue-icon"
+            target="_blank">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Form submission handling
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      // Here you would typically send the form data to your server
+      alert('Thank you for your message. We will contact you soon.');
+      this.reset();
+    });
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
