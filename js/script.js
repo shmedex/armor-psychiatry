@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     // -------------------------------
+    // Utility: Detect touch devices
+    // -------------------------------
+    const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    // -------------------------------
     // Counter Animation
     // -------------------------------
     function animateCounter(counter) {
@@ -45,78 +50,79 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // -------------------------------
-    // Dropdown Hover on Desktop, Click on Mobile
+    // Dropdown Hover (Desktop)
     // -------------------------------
-    const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (!isTouchDevice()) {
+        document.querySelectorAll('.nav-item.dropdown').forEach(dropdown => {
+            const toggle = dropdown.querySelector('.nav-link.dropdown-toggle');
+            const menu = dropdown.querySelector('.dropdown-menu');
 
-    document.querySelectorAll('.nav-item.dropdown').forEach(dropdown => {
-        const toggle = dropdown.querySelector('.nav-link.dropdown-toggle');
-        const menu = dropdown.querySelector('.dropdown-menu');
-
-        if (!isTouchDevice()) {
-            // Hover for desktop
             dropdown.addEventListener('mouseenter', function () {
                 toggle.classList.add('show');
                 menu.classList.add('show');
             });
+
             dropdown.addEventListener('mouseleave', function () {
                 toggle.classList.remove('show');
                 menu.classList.remove('show');
             });
+        });
+    }
+
+    // -------------------------------
+    // Mobile Tap-to-Open / Redirect on 2nd Tap
+    // -------------------------------
+    const servicesToggle = document.querySelector('#servicesToggle');
+    const aboutToggle = document.querySelector('#aboutDropdown');
+
+    let servicesOpenedOnce = false;
+    let aboutOpenedOnce = false;
+
+    let servicesDropdown, aboutDropdown;
+
+    if (servicesToggle && isTouchDevice()) {
+        servicesDropdown = new bootstrap.Dropdown(servicesToggle);
+        servicesToggle.addEventListener('click', function (e) {
+            if (!servicesOpenedOnce) {
+                e.preventDefault();
+                servicesDropdown.show();
+                servicesOpenedOnce = true;
+            } else {
+                window.location.href = 'services.html';
+            }
+        });
+    }
+
+    if (aboutToggle && isTouchDevice()) {
+        aboutDropdown = new bootstrap.Dropdown(aboutToggle);
+        aboutToggle.addEventListener('click', function (e) {
+            if (!aboutOpenedOnce) {
+                e.preventDefault();
+                aboutDropdown.show();
+                aboutOpenedOnce = true;
+            } else {
+                window.location.href = 'about-us.html';
+            }
+        });
+    }
+
+    // -------------------------------
+    // Close dropdowns when tapping outside (Mobile only)
+    // -------------------------------
+    document.addEventListener('click', function (e) {
+        const isOutsideServices = servicesToggle && !servicesToggle.contains(e.target);
+        const isOutsideAbout = aboutToggle && !aboutToggle.contains(e.target);
+
+        if (isTouchDevice()) {
+            if (servicesOpenedOnce && isOutsideServices) {
+                servicesDropdown.hide();
+                servicesOpenedOnce = false;
+            }
+
+            if (aboutOpenedOnce && isOutsideAbout) {
+                aboutDropdown.hide();
+                aboutOpenedOnce = false;
+            }
         }
     });
-
-    // -------------------------------
-    // Services: Redirect on second tap
-    // -------------------------------
-   function isTouchDevice() {
-  return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  const servicesToggle = document.querySelector('#servicesToggle');
-  const aboutToggle = document.querySelector('#aboutDropdown');
-
-  let servicesOpenedOnce = false;
-  let aboutOpenedOnce = false;
-
-  if (servicesToggle) {
-    const servicesDropdown = new bootstrap.Dropdown(servicesToggle); // Bootstrap API
-
-    servicesToggle.addEventListener('click', function (e) {
-      if (isTouchDevice() && !servicesOpenedOnce) {
-        e.preventDefault(); // Prevent redirect
-        servicesDropdown.show(); // Open dropdown
-        servicesOpenedOnce = true;
-      } else {
-        window.location.href = 'services.html'; // Redirect on 2nd tap
-      }
-    });
-  }
-
-  if (aboutToggle) {
-    const aboutDropdown = new bootstrap.Dropdown(aboutToggle); // Bootstrap API
-
-    aboutToggle.addEventListener('click', function (e) {
-      if (isTouchDevice() && !aboutOpenedOnce) {
-        e.preventDefault();
-        aboutDropdown.show();
-        aboutOpenedOnce = true;
-      } else {
-        window.location.href = 'about-us.html';
-      }
-    });
-  }
-
-  // Reset flags if clicked outside
-  document.addEventListener('click', function (e) {
-    if (servicesToggle && !servicesToggle.contains(e.target)) {
-      servicesOpenedOnce = false;
-    }
-    if (aboutToggle && !aboutToggle.contains(e.target)) {
-      aboutOpenedOnce = false;
-    }
-  });
-});
-// -------------------------------
 });
